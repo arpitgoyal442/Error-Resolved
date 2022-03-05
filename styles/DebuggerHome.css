@@ -1,0 +1,35 @@
+
+
+.debuggerHome_doubtsContainer{
+   
+    height: 80vh;
+    
+    display: flex;
+    flex:0.9;
+    justify-content:space-evenly;
+    padding-left: 2%;
+    padding-top: 1%;
+    overflow-y: scroll;
+    flex-wrap:wrap;
+    
+
+}
+
+.debuggerHome_body{
+    
+    display:flex;
+    
+    
+    
+}
+
+.debuggerHome_doubtsContainer::-webkit-scrollbar{
+    width: 7px;
+}
+
+.debuggerHome_doubtsContainer::-webkit-scrollbar-thumb{
+    background-color:darkgray;
+    
+    
+}
+
