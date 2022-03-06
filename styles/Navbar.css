@@ -36,12 +36,12 @@
     border-radius: 100%;
 }
 
-.navbar h3 span{
+.navbar h2 span{
 
     color: red;
 }
 
-.navbar h3{
+.navbar h2{
 
     font-weight: 400;
 }

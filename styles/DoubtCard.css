@@ -4,6 +4,7 @@
     height: fit-content;
     width: 25vw;
     border-radius: 2%;
+    padding: 1%;
     
     box-shadow: 1px 3px 5px rgb(66, 64, 64);
     
@@ -19,6 +20,12 @@
     flex-direction: row;
     flex: 0.3;
     justify-content: space-around;
+}
+
+.doubtCard_navbar > *{
+
+    margin: 0;
+
 }
 
 .doubtCard_footer{
@@ -41,7 +48,8 @@
 
 .doubtCard_view{
     color:palevioletred;
-    margin-left: 68%;
+    margin-left: 60%;
+    
     
 }
 
@@ -51,5 +59,24 @@
     color:rgb(219, 95, 136);
     transition: 0.2;
     transform: scale(1.10);
+
+}
+
+.doubtCard_request{
+    border:0;
+    width: fit-content;
+    background-color: palevioletred;
+    color: aliceblue;
+    border-radius: 5px;
+    margin: 2px;
+    
+    
+}
+
+.doubtCard_request:hover{
+
+    cursor: pointer;
+    background-color:rgb(219, 95, 136); ;
+    
 
 }

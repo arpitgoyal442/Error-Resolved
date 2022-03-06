@@ -1,11 +1,14 @@
-import "../styles/Login.css"
+// import "../styles/Login.css"
+import "../styles/DoubtCard.css"
+import "../styles/Leftbar.css"
+import "../styles/DebuggerHome.css"
 import "../styles/index.css"
 import "../styles/RightChatBar.css"
 import "../styles/OpenDoubt.css"
-import "../styles/Leftbar.css"
+
 import "../styles/DoubtContainer.css"
-import "../styles/DebuggerHome.css"
-import "../styles/DoubtCard.css"
+
+
 import '../styles/Navbar.css'
 
 import Script from "next/script";
