@@ -18,9 +18,9 @@ function DoubtCard() {
         <div className="doubtCard_footer">
           {/* <button id='doubtCard_solve'>Solve</button>
           <button id='doubtCard_view'>View</button> */}
-          <Link href ="/opendoubt"><span id='doubtCard_solve' class="iconify-inline " data-icon="akar-icons:arrow-forward-thick-fill" data-width="24" data-height="24"></span></Link>
+          <Link href ="/opendoubt"><span id='doubtCard_solve' className="iconify-inline " data-icon="akar-icons:arrow-forward-thick-fill" data-width="24" data-height="24"></span></Link>
 
-          <span class="iconify-inline doubtCard_view"  data-icon="bi:eye-fill" data-width="25"></span>
+          <span className="iconify-inline doubtCard_view"  data-icon="bi:eye-fill" data-width="25"></span>
           40/-
 
         </div>
