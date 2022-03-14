@@ -1,12 +1,10 @@
 .debuggerHome_doubtsContainer{
-    max-height: 85vh;
-    display: flex;
-    flex:0.9;
-    justify-content:space-evenly;
-    padding-left: 2rem;
-    padding-top: 1rem;
+    max-height: 87vh;
+    flex:1;
     overflow-y: scroll;
     flex-wrap:wrap;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
 
 .debuggerHome_body{
@@ -18,8 +16,15 @@
 }
 
 .debuggerHome_doubtsContainer::-webkit-scrollbar-thumb{
-    background-color:darkgray;
-    
-    
+    background-color:darkgray;    
 }
-
+@media screen and (max-width: 720px) {
+    .debuggerHome_doubtsContainer{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width: 420px) {
+    .debuggerHome_doubtsContainer{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

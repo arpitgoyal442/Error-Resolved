@@ -1,7 +1,7 @@
 .leftbar {
 	flex: 0.15;
     padding: 1.5rem 1rem 1rem;
-    max-height: 78vh;
+    max-height: 80vh;
     overflow-y: scroll;
 }
 .leftbar ul {
@@ -56,4 +56,9 @@
 }
 .leftbar__filter.active{
     background-color: palevioletred;
+}
+@media screen and (max-width: 720px) {
+    .leftbar{
+        display: none;
+    }
 }

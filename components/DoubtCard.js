@@ -19,7 +19,7 @@ function DoubtCard() {
         <div className="doubtCard_footer">
           
            <button className="doubtCard_request">Request</button>
-          <span className="iconify-inline doubtCard_view"  data-icon="bi:eye-fill" data-width="25"></span>
+          <span className="iconify-inline doubtCard_view"  data-icon="bi:eye-fill" data-width=""></span>
           40/-
 
         </div>
