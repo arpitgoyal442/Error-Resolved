@@ -5,6 +5,7 @@ import "../styles/DebuggerHome.css"
 import "../styles/index.css"
 import "../styles/RightChatBar.css"
 import "../styles/OpenDoubt.css"
+import "../styles/studentLeftbar.css"
 
 import "../styles/DoubtContainer.css"
 

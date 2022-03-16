@@ -1,36 +1,10 @@
-// import React from 'react'
-
-
 function Navbar() {
   return (
     <div className='navbar'>
 
       <h2> <span><del>ERROR:</del> </span>RESOLVED</h2>
 
-      <div className='filter'>
-        {/* <select className="form-select" aria-label="Default select example">
-          <option selected>Topic</option>
-          <option value="1">JAVA</option>
-          <option value="2">c++</option>
-          <option value="3">c</option>
-        </select> */}
-        
-        {/* <select className="form-select" aria-label="Default select example">
-          <option selected>Difficulty</option>
-          <option value="1">Easy</option>
-          <option value="2">Medium</option>
-          <option value="3">Hard</option>
-        </select>
-
-        <select className="form-select" aria-label="Default select example">
-          <option selected>Language</option>
-          <option value="1">English</option>
-          <option value="2">Hindi</option>
-          <option value="3">Hinglish</option>
-        </select> */}
-        
-        
-      </div>
+     
 
 
       <div className="navbarIcons">
