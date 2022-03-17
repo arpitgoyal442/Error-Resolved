@@ -1,18 +1,84 @@
 import Navbar from "../../components/Navbar";
-import Leftbar from "../../components/Leftbar";
-import DoubtCard from "../../components/DoubtCard";
-import { useState } from "react";
+
+const topics = [
+	"Java",
+	"C++",
+	"Python",
+	"C",
+	"Node.js",
+	"Java",
+	"C++",
+	"Python",
+	"C",
+	"Node.js",
+	"Java",
+	"C++",
+	"Python",
+	"C",
+	"Node.js",
+	"Django",
+	"Kubernetes",
+	"Java",
+	"C++",
+	"Python",
+	"C",
+	"Node.js",
+];
 
 function add() {
 	
 	return (
-		<div className="debuggerHome">
+		<div className="addDoubt">
 			<Navbar />
 			<hr />
-			<div className="debuggerHome_body">
-				
-				
+
+			<div className="addDoubt_body">
+
+				<div className="addDoubt_body_form">
+
+
+					<h1>Add Doubt</h1>
+					
+
+					<div className="addDoubt_body_form_language">
+						<label htmlFor="">Language</label>
+						<div className="addDoubt_languages">
+						{topics.map( (t)=>( <p>{t}</p> ) )}
+						</div>
+						
+					</div>
+					<div className="addDoubt_body_form_difficulty">
+						<label htmlFor="">Difficulty</label>
+						<div className="addDoubt_difficulty">
+							<p>Easy</p>
+							<p>Medium</p>
+							<p>Hard</p>
+						</div>
+					</div>
+
+
+                    <div>
+					<label htmlFor="">Screenshot</label>
+					<input type="file" />
+					</div>
+
+
+                    <div>
+					<label htmlFor="">Short Description</label>
+					<textarea name="" id="" cols="30" rows="3"></textarea>
+					</div>
+
+                    <div>
+					<label htmlFor="">Long Description</label>
+					<textarea name="" id="" cols="30" rows="5"></textarea>
+					</div>
+
+					<button>Add</button>
+
+				</div>
+
 			</div>
+			
 		</div>
 	);
 }

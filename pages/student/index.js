@@ -6,12 +6,7 @@ import { useState } from "react";
 import StudentDoubtCard from "../../components/StudentDoubtCard";
 
 function StudentHome() {
-	/*
-		sort: 1->time, 2->price
-		active: -1->false, 0->all, 1->true
-		requested: -1->false, 0->all, 1->true
-		topic: array of strings
-	*/
+	
 	const [sort, setSort] = useState(1);
 		
 	return (

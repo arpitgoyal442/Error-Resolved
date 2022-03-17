@@ -7,10 +7,12 @@ import "../styles/RightChatBar.css"
 import "../styles/OpenDoubt.css"
 import "../styles/studentLeftbar.css"
 
+
 import "../styles/DoubtContainer.css"
 
 
 import '../styles/Navbar.css'
+import "../styles/add.css"
 
 import Script from "next/script";
 

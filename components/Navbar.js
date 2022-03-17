@@ -9,7 +9,7 @@ function Navbar() {
 
       <div className="navbarIcons">
       <span className="iconify-inline" data-icon="clarity:notification-solid" data-width="30" data-height="30"  style={{color:'gold'}}></span>
-        <img src="./profile_img.jpeg" alt="njn" />
+        <img src="/profile_img.jpeg" alt="njn" />
         {/* <span className="iconify-inline power" data-icon="fontisto:power" data-width="30" data-height="30"></span> */}
       </div>
 
