@@ -34,10 +34,13 @@ function add() {
 
 			<div className="addDoubt_body">
 
+			<h1>Add Doubt</h1>
+			
+
 				<div className="addDoubt_body_form">
 
 
-					<h1>Add Doubt</h1>
+					
 					
 
 					<div className="addDoubt_body_form_language">
@@ -65,12 +68,12 @@ function add() {
 
                     <div>
 					<label htmlFor="">Short Description</label>
-					<textarea name="" id="" cols="30" rows="3"></textarea>
+					<textarea name="" id="" cols="30" rows="2"></textarea>
 					</div>
 
                     <div>
 					<label htmlFor="">Long Description</label>
-					<textarea name="" id="" cols="30" rows="5"></textarea>
+					<textarea name="" id="" cols="30" rows="3"></textarea>
 					</div>
 
 					<button>Add</button>
