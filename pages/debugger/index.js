@@ -17,7 +17,6 @@ function DebuggerHome() {
 	return (
 		<div className="debuggerHome">
 			<Navbar />
-			<hr />
 			<div className="debuggerHome_body">
 				<Leftbar
 					sort={sort}

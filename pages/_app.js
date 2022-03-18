@@ -1,11 +1,13 @@
 // import "../styles/Login.css"
 import "../styles/DoubtCard.css"
 import "../styles/Leftbar.css"
-import "../styles/DebuggerHome.css"
 import "../styles/index.css"
 import "../styles/RightChatBar.css"
 import "../styles/OpenDoubt.css"
-import "../styles/studentLeftbar.css"
+import "../styles/debugger/DebuggerHome.css"
+import "../styles/student/StudentHome.css"
+import "../styles/student/studentLeftbar.css"
+import "../styles/student/Filters.css"
 
 
 import "../styles/DoubtContainer.css"

@@ -30,7 +30,6 @@ function add() {
 	return (
 		<div className="addDoubt">
 			<Navbar />
-			<hr />
 
 			<div className="addDoubt_body">
 

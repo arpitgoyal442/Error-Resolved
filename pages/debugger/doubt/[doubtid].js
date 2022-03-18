@@ -7,7 +7,6 @@ function OpenDoubt() {
     <div className='openDoubt'>
 
         <Navbar/>
-        <hr />
         
         <div className="openDoubt_body">
 
