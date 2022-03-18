@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-function StudentLeftbar({ sort, setSort }) {
+function Leftbar({ sort, setSort }) {
 	return (
 		<div className="studentLeftbar">
 			<div className="studentLeftbar_main">
@@ -24,4 +24,4 @@ function StudentLeftbar({ sort, setSort }) {
 	);
 }
 
-export default StudentLeftbar;
+export default Leftbar;

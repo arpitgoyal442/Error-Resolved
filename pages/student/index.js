@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { useState } from "react";
 import Navbar from "../../components/Navbar";
-import StudentDoubtCard from "../../components/StudentDoubtCard";
-import StudentFilters from "../../components/StudentFilters";
+import DoubtCard from "../../components/student/DoubtCard";
+import Filters from "../../components/student/Filters";
 
 function StudentHome() {
 	const [status, setStatus] = useState(1);
@@ -12,14 +12,14 @@ function StudentHome() {
 			<Navbar />
 			<div className="debuggerHome">
 				<>
-					<StudentFilters status={status} setStatus={setStatus} />
+					<Filters status={status} setStatus={setStatus} />
 					<div className="student__newDoubt">
 						<Link href="/student/new-doubt">New Doubt</Link>
 					</div>
 					<div className="debuggerHome_doubtsContainer">
-						<StudentDoubtCard />
-						<StudentDoubtCard />
-						<StudentDoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
 					</div>
 				</>
 			</div>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const StudentFilters = ({status, setStatus}) => {
+const Filters = ({status, setStatus}) => {
   return (
     <div className='studentFilters'>
       <select className='studentFilters__dropdown' name="status" value={status} onChange={(e) => setStatus(e.target.value)}>
@@ -13,4 +13,4 @@ const StudentFilters = ({status, setStatus}) => {
   )
 }
 
-export default StudentFilters
+export default Filters
