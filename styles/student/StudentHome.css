@@ -1,0 +1,19 @@
+.student__newDoubt {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.student__newDoubt > a {
+	margin: 0.5rem 1rem;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	background-color: rgb(219, 95, 136);
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 0.5rem 1rem;
+	font-weight: 700;
+	max-width: 200px;
+	width: 100%;
+}

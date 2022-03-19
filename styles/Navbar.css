@@ -1,63 +1,39 @@
-.debuggerHome{
-    background-color: aliceblue;
+.navbar {
+	display: flex;
+	width: 100vw;
+	height: auto;
+	max-height: 10vh;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	color: #212222;
+	border-bottom: 1px solid black;
 }
 
-.navbar{
-    
-    display: flex;
-    width: 100vw;
-    
-    height: auto;
-    justify-content:space-between;
-    align-items:flex-end;
-
-    /* border: 2px solid black; */
-    flex-wrap: wrap;
-   
-   
-    flex-direction: row;
-    /* background-color: #008b8b; */
-    background-color:aliceblue;
-    color: #212222;
-   
+.navbar img {
+	height: 50px;
+	width: 50px;
+	margin: auto 10px;
+	border-radius: 100%;
 }
 
-
-.navbar img{
-    height: 50px;
-    width: 50px;
-    margin: 2px;
-    /* width: fit-content; */
-    border-radius: 100%;
+.navbar h2 span {
+	color: red;
 }
 
-.navbar h2 span{
-
-    color: red;
+.navbar h2 {
+	margin-left: 4%;
+	font-weight: 400;
 }
 
-.navbar h2{
-
-    margin-left: 4%;
-    font-weight: 400;
-
+.navbarIcons {
+	display: flex;
+	flex: 0.2;
+	justify-content: flex-start;
+	align-items: center;
 }
 
-
-
-
-.navbarIcons{
-
-    display: flex;
-    flex: 0.2;
-    /* background-color: aqua; */
-    /* justify-content:space-around; */
-    justify-content:flex-start;
-    align-items: center;
-
-}
-
-
-.navbarIcons:hover{
-    cursor: pointer;
+.navbarIcons:hover {
+	cursor: pointer;
 }

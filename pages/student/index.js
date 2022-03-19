@@ -1,32 +1,29 @@
-import Navbar from "../../components/Navbar";
-import StudentLeftbar from "../../components/StudentLeftbar";
-// import DoubtCard from "../../components/DoubtCard";
+import Link from "next/link";
 import { useState } from "react";
-
-import StudentDoubtCard from "../../components/StudentDoubtCard";
+import Navbar from "../../components/Navbar";
+import DoubtCard from "../../components/student/DoubtCard";
+import Filters from "../../components/student/Filters";
 
 function StudentHome() {
-	
-	const [sort, setSort] = useState(1);
-		
+	const [status, setStatus] = useState(1);
+
 	return (
-		<div className="debuggerHome">
+		<>
 			<Navbar />
-			<hr />
-			<div className="debuggerHome_body">
-				<StudentLeftbar
-					sort={sort}
-					setSort={setSort}
-					
-				/>
-				 <div className="debuggerHome_doubtsContainer">
-					<StudentDoubtCard />
-					<StudentDoubtCard />
-					<StudentDoubtCard />
-					
-				</div> 
+			<div className="debuggerHome">
+				<>
+					<Filters status={status} setStatus={setStatus} />
+					<div className="student__newDoubt">
+						<Link href="/student/new-doubt">New Doubt</Link>
+					</div>
+					<div className="debuggerHome_doubtsContainer">
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+					</div>
+				</>
 			</div>
-		</div>
+		</>
 	);
 }
 

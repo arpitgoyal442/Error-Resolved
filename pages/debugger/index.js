@@ -1,7 +1,8 @@
 import Navbar from "../../components/Navbar";
-import Leftbar from "../../components/Leftbar";
-import DoubtCard from "../../components/DoubtCard";
+import Leftbar from "../../components/debugger/Leftbar";
+import DoubtCard from "../../components/debugger/DoubtCard";
 import { useState } from "react";
+import Filters from "../../components/debugger/Filters";
 
 function DebuggerHome() {
 	/*
@@ -13,13 +14,13 @@ function DebuggerHome() {
 	const [sort, setSort] = useState(1),
 		[active, setActive] = useState(0),
 		[requested, setRequested] = useState(0),
-		[topic, setTopic] = useState([]);
+		[topic, setTopic] = useState([]),
+		[showModal, setShowModal] = useState(false);
 	return (
-		<div className="debuggerHome">
+		<>
 			<Navbar />
-			<hr />
-			<div className="debuggerHome_body">
-				<Leftbar
+			<div className="debuggerHome">
+				<Filters
 					sort={sort}
 					setSort={setSort}
 					active={active}
@@ -29,24 +30,36 @@ function DebuggerHome() {
 					topic={topic}
 					setTopic={setTopic}
 				/>
-				<div className="debuggerHome_doubtsContainer">
-					<DoubtCard />
-					<DoubtCard />
-					<DoubtCard />
-					<DoubtCard />
-					<DoubtCard />
-					<DoubtCard />
-					<DoubtCard />
-					<DoubtCard />
-					<DoubtCard />
-					<DoubtCard />
-					<DoubtCard />
-					<DoubtCard />
-					<DoubtCard />
-					<DoubtCard />
+				<div className="debuggerHome_body">
+					<Leftbar
+						sort={sort}
+						setSort={setSort}
+						active={active}
+						setActive={setActive}
+						requested={requested}
+						setRequested={setRequested}
+						topic={topic}
+						setTopic={setTopic}
+					/>
+					<div onClick={() => setShowModal(true)} className="debuggerHome_doubtsContainer">
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+					</div>
 				</div>
 			</div>
-		</div>
+		</>
 	);
 }
 
