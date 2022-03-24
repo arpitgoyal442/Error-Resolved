@@ -45,7 +45,7 @@ function add() {
 					<div className="addDoubt_body_form_language">
 						<label htmlFor="">Language</label>
 						<div className="addDoubt_languages">
-						{topics.map( (t)=>( <p>{t}</p> ) )}
+						{topics.map( (t,i)=>( <p key={i}>{t}</p> ) )}
 						</div>
 						
 					</div>

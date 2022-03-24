@@ -10,13 +10,13 @@ function StudentHome() {
 	return (
 		<>
 			<Navbar />
-			<div className="debuggerHome">
+			<div className="studentHome">
 				<>
 					<Filters status={status} setStatus={setStatus} />
 					<div className="student__newDoubt">
 						<Link href="/student/new-doubt">New Doubt</Link>
 					</div>
-					<div className="debuggerHome_doubtsContainer">
+					<div className="studentHome_doubtsContainer">
 						<DoubtCard />
 						<DoubtCard />
 						<DoubtCard />

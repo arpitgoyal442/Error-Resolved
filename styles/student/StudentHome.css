@@ -1,3 +1,19 @@
+.studentHome {
+	min-height: 88vh;
+	position: relative;
+}
+.studentHome_doubtsContainer {
+	flex: 1;
+	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+.studentHome_doubtsContainer::-webkit-scrollbar {
+	width: 7px;
+}
+.studentHome_doubtsContainer::-webkit-scrollbar-thumb {
+	background-color: darkgray;
+}
 .student__newDoubt {
 	width: 100%;
 	display: flex;
@@ -16,4 +32,14 @@
 	font-weight: 700;
 	max-width: 200px;
 	width: 100%;
+}
+@media screen and (max-width: 720px) {
+	.studentHome_doubtsContainer {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media screen and (max-width: 420px) {
+	.studentHome_doubtsContainer {
+		grid-template-columns: repeat(1, 1fr);
+	}
 }
