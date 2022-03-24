@@ -11,9 +11,11 @@ function OpenDoubt() {
         <div className="openDoubt_body">
 
             <div className="openDoubt_main">
-                <div className="openDoubt_main_header">JAVA DOUBT</div>
+               
                 
                 <div className="openDoubt_main_body">
+                <div className="openDoubt_main_header">JAVA DOUBT</div>
+
 
                 
 

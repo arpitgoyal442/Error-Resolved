@@ -28,7 +28,7 @@
 
 .openDoubt_main_body{
     display: flex;
-    flex:0.95;
+    flex:1;
     /* background-color: antiquewhite; */
     border: 2px solid black;
     /* overflow-y: scroll; */
@@ -98,7 +98,8 @@
 
 .openDoubt_main_header{
 
-    align-self: center;
+    /* align-self: center; */
+    justify-self: center;
 
 }
 
