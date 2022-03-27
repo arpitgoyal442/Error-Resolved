@@ -20,6 +20,30 @@ function StudentHome() {
 						<DoubtCard />
 						<DoubtCard />
 						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
+						<DoubtCard />
 					</div>
 				</>
 			</div>

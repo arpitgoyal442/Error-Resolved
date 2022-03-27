@@ -1,12 +1,11 @@
 .studentHome {
-	min-height: 88vh;
 	position: relative;
 }
 .studentHome_doubtsContainer {
 	flex: 1;
 	flex-wrap: wrap;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 }
 .studentHome_doubtsContainer::-webkit-scrollbar {
 	width: 7px;
@@ -32,6 +31,11 @@
 	font-weight: 700;
 	max-width: 200px;
 	width: 100%;
+}
+@media screen and (max-width: 980px) {
+	.studentHome_doubtsContainer {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
 @media screen and (max-width: 720px) {
 	.studentHome_doubtsContainer {

@@ -1,13 +1,10 @@
-.debuggerHome {
-	min-height: 88vh;
-}
 .debuggerHome_doubtsContainer {
-	/* max-height: 87vh; */
+	margin: 0.5rem;
 	flex: 1;
-	/* overflow-y: scroll; */
 	flex-wrap: wrap;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 0.25rem;
 }
 .debuggerHome_body {
 	display: flex;
@@ -18,7 +15,7 @@
 .debuggerHome_doubtsContainer::-webkit-scrollbar-thumb {
 	background-color: darkgray;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 900px) {
 	.debuggerHome_doubtsContainer {
 		grid-template-columns: repeat(2, 1fr);
 	}
