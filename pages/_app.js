@@ -1,4 +1,5 @@
 // import "../styles/Login.css"
+import "../styles/variables.css"
 import "../styles/DoubtCard.css"
 import "../styles/index.css"
 import "../styles/RightChatBar.css"

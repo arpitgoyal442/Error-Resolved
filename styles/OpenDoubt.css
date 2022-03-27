@@ -1,5 +1,5 @@
 .openDoubt{
-    background-color: aliceblue;
+    background-color: var(--primary-background);
     height: 100vh;
     width: 100vw;
     

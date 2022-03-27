@@ -1,4 +1,6 @@
 .leftbar {
+    position: sticky;
+    top: 10vh;
 	flex: 0.15;
     padding: 1.5rem 1rem 1rem;
     max-height: 80vh;
@@ -20,11 +22,11 @@
 }
 
 .leftbar::-webkit-scrollbar-thumb {
-	background-color: palevioletred !important;
+	background-color: var(--button) !important;
 }
 
 .leftbar ul li:hover {
-	color: palevioletred;
+	color: var(--button);
 	cursor: pointer;
 }
 .leftbar__filterHead{
@@ -55,7 +57,7 @@
     cursor: pointer;
 }
 .leftbar__filter.active{
-    background-color: palevioletred;
+    background-color: var(--button);
 }
 @media screen and (max-width: 720px) {
     .leftbar{

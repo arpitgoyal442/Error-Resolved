@@ -2,7 +2,7 @@
 
 
 .addDoubt{
-    background-color:aliceblue;
+    background-color: var(--primary-background);
 
 }
 
@@ -89,12 +89,12 @@
 }
 
 .addDoubt_languages p:hover{
-    background-color:palevioletred;
+    background-color: var(--button);
     cursor: pointer;
 }
 
 .addDoubt_difficulty p:hover{
-    background-color:palevioletred;
+    background-color:var(--button);
     cursor: pointer;
 }
 
@@ -117,7 +117,7 @@
     height: fit-content;
     /* border: 0; */
     width: 100%;
-    background-color: aliceblue;
+    background-color: var(--primary-background);
     font-size: larger;
     border-bottom: 2px solid;
 
@@ -129,7 +129,7 @@
     width: 20%;
     height: fit-content;
     margin-left: 37%;
-    background-color:palevioletred;
+    background-color:var(--button);
 
     
 }

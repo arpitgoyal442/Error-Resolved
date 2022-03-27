@@ -44,7 +44,7 @@
   border: 1px solid #888;
 }
 .debuggerFilters__options > button.active{
-  background-color: palevioletred;
+  background-color: var(--button);
 }
 @media screen and (min-width: 720px) {
 	.debuggerFilters {
