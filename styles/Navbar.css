@@ -6,6 +6,7 @@
 	width: 100vw;
 	height: auto;
 	max-height: 10vh;
+	min-height: 60px;
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
@@ -38,4 +39,9 @@
 }
 .navbarIcons:hover {
 	cursor: pointer;
+}
+@media screen and (max-width: 320px) {
+	.navbar h2 {
+		/* font-size: 18px; */
+	}
 }
