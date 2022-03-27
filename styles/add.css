@@ -82,8 +82,9 @@
 .addDoubt_languages p{
     padding: 2px;
     border: 1px solid black;
-    margin: 1%;
+    margin: 2%;
     margin-top: 0;
+    border-radius: 5px;
 
     
 }
