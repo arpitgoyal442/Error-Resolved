@@ -15,7 +15,7 @@
 .debuggerHome_doubtsContainer::-webkit-scrollbar-thumb {
 	background-color: darkgray;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 900px) {
 	.debuggerHome_doubtsContainer {
 		grid-template-columns: repeat(2, 1fr);
 	}

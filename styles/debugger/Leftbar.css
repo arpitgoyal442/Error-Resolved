@@ -1,7 +1,7 @@
 .leftbar {
     position: sticky;
     top: 10vh;
-	flex: 0.15;
+	flex: 0.2;
     padding: 1.5rem 1rem 1rem;
     max-height: 80vh;
     overflow-y: scroll;

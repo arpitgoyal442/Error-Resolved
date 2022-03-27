@@ -1,5 +1,6 @@
 .doubtCard {
 	position: relative;
+	z-index: 1;
 	background-color: var(--secondary-background);
 	height: fit-content;
 	border-radius: 10px;
