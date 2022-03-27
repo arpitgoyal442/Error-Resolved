@@ -1,0 +1,52 @@
+.debuggerProfile_body{
+
+    height: 87vh;
+    width: 100vw;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.debuggerProfile_card{
+
+    height: 90%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    /* background-color:#88888821; */
+}
+
+.debuggerProfile_body_left{
+
+    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex:0.3;
+    /* background-color: aqua; */
+    
+    /* background-color: antiquewhite; */
+    
+    
+
+}
+
+ .debuggerProfile_body_left img{
+    height: 15vh;
+    width: 8vw;
+    border-radius: 100%;
+    
+} 
+
+.debuggerProfile_body_right{
+    flex: 1;
+    background-color: aquamarine;
+    /* width: 100%;
+    height: 100%; */
+
+}
+
+
+
+

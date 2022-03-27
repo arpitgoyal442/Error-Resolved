@@ -10,6 +10,7 @@ import "../styles/debugger/DebuggerFilters.css"
 import "../styles/student/StudentHome.css"
 import "../styles/student/studentLeftbar.css"
 import "../styles/student/Filters.css"
+import "../styles/debugger/DebuggerProfile.css"
 
 
 import "../styles/DoubtContainer.css"
