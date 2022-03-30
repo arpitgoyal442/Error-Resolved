@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Navbar from "../../components/Navbar";
 
 const topics = [
@@ -26,51 +27,63 @@ const topics = [
 ];
 
 function add() {
+	const [language, setLanguage] = useState(topics[0]),
+		[difficulty, setDifficulty] = useState(1),
+		[screenshot, setScreenshot] = useState(null),
+		[shortDesc, setShortDesc] = useState(""),
+		[longDesc, setLongDesc] = useState("");
 	return (
 		<div className="addDoubt">
 			<Navbar />
-
 			<div className="addDoubt_body">
 				<h1 className="addDoubt_mainHead">Add Doubt</h1>
 
 				<div className="addDoubt_form">
 					<div className="addDoubt_language">
-						<label htmlFor="" className="addDoubt_heading">
-							Language
+						<label className="addDoubt_heading">
+							Language*
 						</label>
 						<div className="list">
 							{topics.map((t, i) => (
-								<p key={i}>{t}</p>
+								<p key={i} className={language===t?'active':undefined} onClick={() => setLanguage(t)}>{t}</p>
 							))}
 						</div>
 					</div>
 					<div className="addDoubt_difficulty">
-						<label htmlFor="" className="addDoubt_heading">
-							Difficulty
+						<label className="addDoubt_heading">
+							Difficulty*
 						</label>
 						<div className="list">
-							<p>Easy</p>
-							<p>Medium</p>
-							<p>Hard</p>
+							<p className={difficulty===1?'active':undefined} onClick={() => setDifficulty(1)}>Easy</p>
+							<p className={difficulty===2?'active':undefined} onClick={() => setDifficulty(2)}>Medium</p>
+							<p className={difficulty===3?'active':undefined} onClick={() => setDifficulty(3)}>Hard</p>
 						</div>
 					</div>
 
 					<div>
-						<label htmlFor="" className="addDoubt_heading">Screenshot</label>
-						<input type="file" />
+						<label className="addDoubt_heading">
+							Screenshot
+						</label>
+						<input type="file" onChange={(e) => setScreenshot(e.target.files[0])} />
 					</div>
 
 					<div>
-						<label htmlFor="" className="addDoubt_heading">Short Description</label>
-						<textarea name="" id="" cols="30" rows="2"></textarea>
+						<label className="addDoubt_heading">
+							Short Description*
+						</label>
+						<textarea required value={shortDesc} onChange={(e) => setShortDesc(e.target.value)} cols="30" rows="2" maxLength={50}></textarea>
 					</div>
 
 					<div>
-						<label htmlFor="" className="addDoubt_heading">Long Description</label>
-						<textarea name="" id="" cols="30" rows="3"></textarea>
+						<label className="addDoubt_heading">
+							Long Description*
+						</label>
+						<textarea required value={longDesc} onChange={(e) => setLongDesc(e.target.value)} cols="30" rows="4"></textarea>
 					</div>
 
-					<div className="addDoubt_btnParent"><button className="addDoubt_btn">Add</button></div>
+					<div className="addDoubt_btnParent">
+						<button className="addDoubt_btn">Add</button>
+					</div>
 				</div>
 			</div>
 		</div>

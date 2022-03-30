@@ -11,7 +11,7 @@
 	width: 100%;
 }
 .addDoubt_mainHead {
-    width: 100%;
+	width: 100%;
 	text-align: center;
 }
 .addDoubt_language {
@@ -34,6 +34,9 @@
 	border-radius: 5px;
 	border: 1px solid black;
 	cursor: pointer;
+}
+.addDoubt_form .list p.active{
+	background-color: var(--button);
 }
 .addDoubt_language .list p:hover {
 	background-color: var(--button);
@@ -61,13 +64,13 @@
 }
 .addDoubt_form {
 	width: 80%;
-    margin:auto;
+	margin: auto;
 }
-.addDoubt_form > div{
-    margin: 1.5rem 0;
+.addDoubt_form > div {
+	margin: 1.5rem 0;
 }
 .addDoubt_form textarea {
-    box-sizing: border-box;
+	box-sizing: border-box;
 	resize: none;
 	height: fit-content;
 	width: 100%;
@@ -77,18 +80,47 @@
 	border-radius: 10px;
 	border: 1px solid black;
 }
-.addDoubt_btnParent{
-    display: flex;
-    justify-content: center;
+.addDoubt_btnParent {
+	display: flex;
+	justify-content: center;
 }
 .addDoubt_btn {
 	font-size: 20px;
 	padding: 0.25rem 2rem;
-    border: none;
-    border-radius: 10px;
+	border: none;
+	border-radius: 10px;
 	background-color: var(--button);
 }
 .addDoubt_form button:hover {
 	background-color: rgb(104, 253, 203);
 	cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+	.addDoubt_heading {
+		font-size: 18px;
+		margin-bottom: 0.5rem !important;
+	}
+	.addDoubt_form > div {
+		margin: 1rem 0;
+		display: block;
+	}
+	.addDoubt_form .list,
+	.addDoubt_form input,
+	.addDoubt_form textarea {
+		margin-top: 0.5rem;
+	}
+	.addDoubt_form .list{
+		column-gap: 0.5rem;
+		font-size: 14px;
+	}
+	.addDoubt_form .list p{
+		flex: 1;
+		text-align: center;
+	}
+	.addDoubt_form textarea{
+		padding: 0.5rem;
+	}
+	.addDoubt_btn {
+		width: 100%;
+	}
 }
