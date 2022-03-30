@@ -1,5 +1,6 @@
 
 import Navbar from "../../../components/Navbar.js";
+import UserChart from "../../../components/student/UserChart.js";
 function debuggerprofile(){
 
     return(
@@ -18,8 +19,9 @@ function debuggerprofile(){
                     <img src="/profile_img.jpeg" alt="" />
                     
                     
-                    <p>Arpit Goyal</p>
-                    <p>🏆🏆🏆🏆</p>
+                    <h2>Arpit Goyal ⭐⭐⭐⭐</h2>
+                    
+                
                     
                     
                     <p>arpitgoyal@gmail.com</p>
@@ -32,7 +34,9 @@ function debuggerprofile(){
                 </div>
 
                 <div className="debuggerProfile_body_right">
-                    jjj
+
+                    <UserChart/>
+                    
                 </div>
                 
                
