@@ -15,6 +15,7 @@ import "../styles/student/studentLeftbar.css"
 import "../styles/student/Filters.css"
 import "../styles/student/NewDoubt.css"
 import "../styles/debugger/DebuggerProfile.css"
+import "../styles/UserChart.css"
 
 import Script from "next/script";
 
