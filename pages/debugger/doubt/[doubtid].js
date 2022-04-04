@@ -1,51 +1,67 @@
+import Navbar from "../../../components/Navbar.js";
 
-import Navbar from "../../../components/Navbar.js"
+function DoubtPage() {
+	return (
+		<>
+			<Navbar />
+			<div className="doubtPage">
+				<div className="doubtPage_body">
+					<div className="left">
+						<div className="doubtPage_main">
+							<div className="doubtPage_mainHead">JAVA DOUBT</div>
+                            <div className="doubtPage_mainBody"></div>
+						</div>
+						<div className="left_footer">
+							<span
+								className="iconify-inline"
+								data-icon="wpf:video-call"
+								data-width="30"
+								data-height="30"
+							/>
+							<span
+								className="iconify-inline active"
+								data-icon="wpf:video-call"
+								data-width="30"
+								data-height="30"
+							/>
+							<span
+								className="iconify-inline"
+								data-icon="wpf:video-call"
+								data-width="30"
+								data-height="30"
+							/>
+						</div>
+					</div>
+					<div className="right">
+						<div className="doubtPage_chatHead">
+							<img src="/profile_img.jpeg" alt="njn" />
+							<p>Arpit Goyal</p>
+						</div>
+						<hr />
 
-
-function OpenDoubt() {
-  return (
-    <div className='openDoubt'>
-
-        <Navbar/>
-        
-        <div className="openDoubt_body">
-
-            <div className="openDoubt_main">
-               
-                
-                <div className="openDoubt_main_body">
-                <div className="openDoubt_main_header">JAVA DOUBT</div>
-
-
-                
-
-                </div>
-                <div className="openDoubt_main_footer">
-                <span class="iconify-inline" data-icon="wpf:video-call" data-width="30" data-height="30"></span>
-                </div>
-            </div>
-            <div className="openDoubt_rightBar">
-                <div className="openDoubt_rightBar_navbar">
-                <img src="/profile_img.jpeg" alt="njn" />
-                <p>Arpit Goyal</p>
-
-                
-                </div>
-                <hr />
-                
-                <div className="openDoubt_rightBar_messages"></div>
-                <div className="openDoubt_rightBar_footer">
-                <span class="iconify-inline openDoubt_attachIcon" data-icon="akar-icons:attach" data-width="20" data-height="20"></span>
-                    <input id='openDoubt_send' type="text" placeholder='Write message...' />
-                    <span  class="iconify-inline openDoubt_sendIcon" data-icon="fluent:send-20-filled" data-width="20" data-height="20"></span>
-                </div>
-                
-            </div>
-
-        </div>
-
-    </div>
-  )
+						<div className="doubtPage_messages"></div>
+						<div className="sendMessage">
+							<span
+								className="iconify-inline"
+								data-icon="akar-icons:attach"
+								data-width="20"
+								data-height="20"
+							></span>
+							<div className="inputBox">
+								<input className="send" type="text" placeholder="Write message..." />
+								<span
+									className="iconify-inline"
+									data-icon="fluent:send-20-filled"
+									data-width="20"
+									data-height="20"
+								></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</>
+	);
 }
 
-export default OpenDoubt
+export default DoubtPage;
