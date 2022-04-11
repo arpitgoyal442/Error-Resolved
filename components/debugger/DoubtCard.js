@@ -1,8 +1,25 @@
 // import React from 'react'
 // import { Link } from 'react-router-dom'
 import Link from "next/link";
+import Modal from 'react-modal';
+import React , {useState} from 'react';
+import DoubtModal from "./DoubtModal.js"
 
 function DoubtCard() {
+
+	const[modal,setModal]=useState(false);
+
+	const OnModal=()=>{
+
+		setModal(true);
+
+	}
+
+	const offModal=()=>{
+		setModal(false);
+	}
+
+
 	return (
 		<div className="doubtCard">
 			<div className="doubtCard_navbar">
@@ -27,18 +44,77 @@ function DoubtCard() {
 				</div>
 			</div>
 			<div className="doubtCard_footer">
-				<button className="doubtCard_view">View</button>
+				<button onClick={ OnModal } className="doubtCard_view">View</button>
 				<button className="doubtCard_request">Request</button>
-				{/* <button className="doubtCard_view">
-					<span
-						className="iconify-inline"
-						data-icon="bi:eye-fill"
-						data-width=""
-					></span>
-				</button>
-				40/- */}
+				
 			</div>
+
+			<Modal isOpen={modal} 
+
+			style={
+				{
+					overlay:{
+
+						display:"flex",
+						alignSelf:"center",
+						justifySelf:"center",
+
+						backgroundColor:'rgba(200, 200, 200,0.1 )',
+						zIndex:'2',
+
+						
+						
+					},
+					content:{
+
+						
+
+						position: 'fixed',
+						// display:"flex",
+						alignSelf:"center",
+						justifySelf:"center",
+
+						marginLeft:"27vw",
+						marginTop:"10vh",
+						marginBottom:"10vh",
+                         
+                         border: '1px solid black',
+                         background: '#fff',
+                        //  overflow: 'auto',
+                         WebkitOverflowScrolling: 'touch',
+                         borderRadius: '4px',
+                        
+						 height:"80%",
+						width:"50%"
+                         
+						 
+
+
+						
+
+
+					}
+				}
+			}
+			 >
+
+				 <DoubtModal offModal={offModal} />
+
+
+
+				
+
+				
+
+            
+
+				
+			</Modal>
+
+
+
 		</div>
+
 	);
 }
 

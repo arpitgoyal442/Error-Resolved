@@ -45,3 +45,10 @@
 		/* font-size: 18px; */
 	}
 }
+
+.bell-dropdown-content{
+
+	border: 2px solid black;
+	
+	z-index: 1;
+}

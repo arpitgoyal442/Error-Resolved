@@ -14,6 +14,7 @@ function StudentDoubtCard() {
 			</div>
 			<div className="doubtCard_footer">
 				<button className="doubtCard_request">Open</button>
+				<button className="doubtCard_request">Remove</button>
 			</div>
 		</div>
 	);
