@@ -1,22 +1,19 @@
 
-import React , {useState} from "react"
+import React, { useState } from "react";
+import Modal from "react-modal";
+import { hide } from "react-modal/lib/helpers/ariaAppHider";
+
 
 function Navbar() {
-
-	const [dropdown,setDropdown]=useState(false);
-
-	function bellClicked(){
-
-		// e.preventDefault();
-		console.log("Clicked");
-	}
-
-	
 
 
 	return (
 		<>
 			<div className="navbar">
+
+
+
+
 				<h2>
 					{" "}
 					<span>
@@ -26,38 +23,55 @@ function Navbar() {
 				</h2>
 
 				<div className="navbarIcons">
-					<div className="bell-dropdown">
+					{/* <div className="bell-dropdown">
 
-					<span
-					    
-						className="iconify-inline"
+						<span
+
+							className="iconify-inline"
+
+
+							data-icon="clarity:notification-solid"
+							data-width="30"
+							data-height="30"
+							style={{ color: "gold" }}
+						></span>
+
 						
-						onClick={bellClicked()}
-						data-icon="clarity:notification-solid"
-						data-width="30"
-						data-height="30"
-						style={{ color: "gold" }}
-					></span>
 
-					  
-					  { dropdown? <div  className="bell-dropdown-content">
 
-<ul>
-	<li>abc</li>
-	<li>djfnj</li>
-	<li>jdnfj</li>
-	<li>wjdnfj</li>
+					</div> */}
 
-</ul>
+<div class="dropdown">
+ 
+  <span class="iconify-inline" data-icon="clarity:notification-solid" style={{color: "gold"}} data-width="30" data-height="30"></span>
+  <div class="dropdown-content">
+  <ul>
+	  <li>abc</li>
+	  <li>arpit</li>
+	  <li>abc</li>
+	  <li>arpit</li>
+	  <li>abc</li>
+	  <li>arpit</li>
+  </ul>
+  </div>
+</div>
 
-</div>: '' }
 
-					
 
-					</div>
+
+
+
 					<img src="/profile_img.jpeg" alt="njn" />
 				</div>
+
+				
+
+
 			</div>
+
+			
+
+
 		</>
 	);
 }

@@ -4,6 +4,7 @@ import Link from "next/link";
 import Modal from 'react-modal';
 import React , {useState} from 'react';
 import DoubtModal from "./DoubtModal.js"
+Modal.setAppElement("#root");
 
 function DoubtCard() {
 
@@ -49,18 +50,16 @@ function DoubtCard() {
 				
 			</div>
 
-			<Modal isOpen={modal} 
+			<Modal isOpen={modal} onRequestClose={ ()=>{setModal(false)} } 
 
 			style={
 				{
 					overlay:{
 
-						display:"flex",
-						alignSelf:"center",
-						justifySelf:"center",
 
-						backgroundColor:'rgba(200, 200, 200,0.1 )',
+						backgroundColor:'rgba(105,105,105,0.3)',
 						zIndex:'2',
+						// backgroundColor:'gray'
 
 						
 						
@@ -69,20 +68,17 @@ function DoubtCard() {
 
 						
 
-						position: 'fixed',
-						// display:"flex",
-						alignSelf:"center",
-						justifySelf:"center",
-
+						padding:"0",
 						marginLeft:"27vw",
 						marginTop:"10vh",
 						marginBottom:"10vh",
                          
                          border: '1px solid black',
                          background: '#fff',
-                        //  overflow: 'auto',
+                        
                          WebkitOverflowScrolling: 'touch',
                          borderRadius: '4px',
+						overflowY:"auto",
                         
 						 height:"80%",
 						width:"50%"
