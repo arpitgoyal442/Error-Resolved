@@ -2,9 +2,12 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 import { hide } from "react-modal/lib/helpers/ariaAppHider";
+import DropdownContent from "./student/DropdownContent";
 
 
 function Navbar() {
+
+	const[showNotification,setNotification]=useState(false);
 
 
 	return (
@@ -23,35 +26,27 @@ function Navbar() {
 				</h2>
 
 				<div className="navbarIcons">
-					{/* <div className="bell-dropdown">
+					
 
-						<span
-
-							className="iconify-inline"
-
-
-							data-icon="clarity:notification-solid"
-							data-width="30"
-							data-height="30"
-							style={{ color: "gold" }}
-						></span>
-
-						
-
-
-					</div> */}
-
-<div class="dropdown">
+<div onClick={()=>{ showNotification? setNotification(false):setNotification(true     )}} class="dropdown">
  
-  <span class="iconify-inline" data-icon="clarity:notification-solid" style={{color: "gold"}} data-width="30" data-height="30"></span>
-  <div class="dropdown-content">
+  <span  class="iconify-inline" data-icon="clarity:notification-solid" style={{color: "gold"}} data-width="30" data-height="30"></span>
+  <div class="dropdown-content" style={ {display: showNotification?"block":"none" } }>
   <ul>
-	  <li>abc</li>
-	  <li>arpit</li>
-	  <li>abc</li>
-	  <li>arpit</li>
-	  <li>abc</li>
-	  <li>arpit</li>
+	  <DropdownContent/>
+	  <DropdownContent/>
+	  <DropdownContent/>
+	  <DropdownContent/>
+	  <DropdownContent/>
+	  <DropdownContent/>
+	  <DropdownContent/>
+	  <DropdownContent/>
+	  <DropdownContent/>
+	  <DropdownContent/>
+	  <DropdownContent/>
+	  <DropdownContent/>
+	  
+	  
   </ul>
   </div>
 </div>
