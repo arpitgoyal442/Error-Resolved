@@ -17,6 +17,7 @@ import "../styles/student/NewDoubt.css"
 import "../styles/debugger/DebuggerProfile.css"
 import "../styles/UserChart.css"
 import "../styles/debugger/DoubtModal.css"
+import "../styles/student/NotificationHandle.css"
 
 // import 'bootstrap/dist/css/bootstrap.css'
 
