@@ -34,8 +34,8 @@ function DoubtPage() {
 					</div>
 					<div className="right">
 						<div className="doubtPage_chatHead">
-							<img src="/profile_img.jpeg" alt="njn" />
-							<p>Arpit Goyal</p>
+							<img src="/userimg.jpg" alt="njn" />
+							<p>Dhruv Pasricha</p>
 						</div>
 						<hr />
 

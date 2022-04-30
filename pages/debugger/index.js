@@ -42,16 +42,16 @@ function DebuggerHome() {
 						setTopic={setTopic}
 					/>
 					<div onClick={() => setShowModal(true)} className="debuggerHome_doubtsContainer">
+						<DoubtCard status="active" />
+						<DoubtCard />
+						<DoubtCard  status="active"/>
+						<DoubtCard />
+						<DoubtCard status="active" />
 						<DoubtCard />
 						<DoubtCard />
+						<DoubtCard status="active" />
 						<DoubtCard />
-						<DoubtCard />
-						<DoubtCard />
-						<DoubtCard />
-						<DoubtCard />
-						<DoubtCard />
-						<DoubtCard />
-						<DoubtCard />
+						<DoubtCard status="active" />
 						<DoubtCard />
 						<DoubtCard />
 						<DoubtCard />

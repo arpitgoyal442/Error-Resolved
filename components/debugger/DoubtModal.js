@@ -7,6 +7,11 @@ function modal({offModal}){
 
         <div className="modal">
 
+
+             <h2 className="doubt_modal_studentname">Arpit Goyal (4/5)<span class="iconify-inline" data-icon="ant-design:star-filled"></span> </h2>
+             
+            
+
             <h2>Short Description</h2>
             <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
 
@@ -19,12 +24,6 @@ Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
 
 1914 translation by H. Rackham
 "But I mus "</p>
-
-
-
-            
-
-
 
         </div>
     )

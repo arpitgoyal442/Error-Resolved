@@ -1,12 +1,12 @@
-// import React from 'react'
-// import { Link } from 'react-router-dom'
+import React from 'react';
+import ReactLoading from 'react-loading';
 import Link from "next/link";
 import Modal from 'react-modal';
-import React , {useState} from 'react';
+import  {useState} from 'react';
 import DoubtModal from "./DoubtModal.js"
 Modal.setAppElement("#root");
 
-function DoubtCard() {
+function DoubtCard({status}) {
 
 	const[modal,setModal]=useState(false);
 
@@ -24,16 +24,18 @@ function DoubtCard() {
 	return (
 		<div className="doubtCard">
 			<div className="doubtCard_navbar">
-				<p>Active</p>
+				{/* <p>Active</p> */}
+				<ReactLoading type={status=='active'?"blank":"bars"} color="gray" height="10%" width="10%" />
 				<h2>Java</h2>
-				<p>Medium</p>
-				{/* <p className="doubtCard_amount">₹40</p> */}
+				<p>12-3-2022</p>
+				
 			</div>
 
 			<div className="doubtCard_body">
 				<div>
 					<h5 className="heading">Amount</h5>
 					<p>₹40</p>
+					
 				</div>
 				<div>
 					<h5 className="heading">Description</h5>
@@ -46,7 +48,12 @@ function DoubtCard() {
 			</div>
 			<div className="doubtCard_footer">
 				<button onClick={ OnModal } className="doubtCard_view">View</button>
-				<button className="doubtCard_request">Request</button>
+
+                { status=='active' && 
+				<button     className="doubtCard_request">  Request</button>
+	             }
+			  
+			  
 				
 			</div>
 
@@ -59,7 +66,7 @@ function DoubtCard() {
 
 						backgroundColor:'rgba(105,105,105,0.3)',
 						zIndex:'2',
-						// backgroundColor:'gray'
+						
 
 						
 						
@@ -78,7 +85,14 @@ function DoubtCard() {
                         
                          WebkitOverflowScrolling: 'touch',
                          borderRadius: '4px',
-						overflowY:"auto",
+						//  overflowY:"auto",
+
+						 scrollbarWidth:"0",
+						 
+						 
+
+
+						
                         
 						 height:"80%",
 						width:"50%"
