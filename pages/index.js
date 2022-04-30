@@ -1,5 +1,5 @@
 export default function Home() {
   return (
-    <div> Welcome Bak </div>
+    <div> Welcome Back </div>
   )
 }

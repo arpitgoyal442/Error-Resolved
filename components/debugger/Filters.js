@@ -26,7 +26,7 @@ const topics = [
 	"Node.js",
 ];
 
-const Filters = ({ sort, setSort, active, setActive, requested, setRequested, topic, setTopic }) => {
+const Filters = ({ sort, setSort, solvingNow, setSolvingNow, active, setActive, requested, setRequested, topic, setTopic }) => {
 	const [showModal, setShowModal] = useState(false);
 
 	const filterTopic = (t) => {
@@ -56,6 +56,24 @@ const Filters = ({ sort, setSort, active, setActive, requested, setRequested, to
 						</div>
 					</div>
 					<hr />
+					<hr />
+					<div className="debuggerFilters__cat">
+						<p className="debuggerFilters__subhead">Solving Now</p>
+						<div className="debuggerFilters__options">
+							<button
+								onClick={() => setSolvingNow(true)}
+								className={solvingNow && "active"}
+							>
+								True
+							</button>
+							<button
+								onClick={() => setSolvingNow(false)}
+								className={!solvingNow && "active"}
+							>
+								False
+							</button>
+						</div>
+					</div>
 					<hr />
 					<div className="debuggerFilters__cat">
 						<p className="debuggerFilters__subhead">Active</p>

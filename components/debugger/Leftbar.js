@@ -23,7 +23,7 @@ const topics = [
 	"Node.js",
 ];
 
-function Leftbar({ sort, setSort, active, setActive, requested, setRequested, topic, setTopic }) {
+function Leftbar({ sort, setSort, solvingNow, setSolvingNow, active, setActive, requested, setRequested, topic, setTopic }) {
   const filterTopic = (t) => {
     if (topic.includes(t)) {
       setTopic((prev) => prev.filter((top) => top !== t));
@@ -43,6 +43,12 @@ function Leftbar({ sort, setSort, active, setActive, requested, setRequested, to
 				</p>
 			</div>
 			<hr />
+			<hr />
+			<p className="leftbar__filterHead">Solving Now</p>
+			<div className="leftbar__filterCat">
+				<p onClick={() => setSolvingNow(true)} className={`leftbar__filter noselect ${solvingNow && "active"}`}>True</p>
+				<p onClick={() => setSolvingNow(false)} className={`leftbar__filter noselect ${!solvingNow && "active"}`}>False</p>
+			</div>
 			<hr />
 			<p className="leftbar__filterHead">Active</p>
 			<div className="leftbar__filterCat">

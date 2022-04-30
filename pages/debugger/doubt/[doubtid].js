@@ -9,7 +9,7 @@ function DoubtPage() {
 					<div className="left">
 						<div className="doubtPage_main">
 							<div className="doubtPage_mainHead">JAVA DOUBT</div>
-                            <div className="doubtPage_mainBody"></div>
+							<div className="doubtPage_mainBody"></div>
 						</div>
 						<div className="left_footer">
 							<span
@@ -38,8 +38,54 @@ function DoubtPage() {
 							<p>Dhruv Pasricha</p>
 						</div>
 						<hr />
-
-						<div className="doubtPage_messages"></div>
+						<div className="doubtPage_messages">
+						<div className="date">
+								{new Date().toLocaleDateString()}
+							</div>
+							<div className="message sender">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quas!</p>
+								<span className="time">{new Date().toLocaleTimeString()}</span>
+							</div>
+							<div className="message sender">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quas!</p>
+								<span className="time">{new Date().toLocaleTimeString()}</span>
+							</div>
+							<div className="date">
+								{new Date().toLocaleDateString()}
+							</div>
+							<div className="message receiver">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quas!</p>
+								<span className="time">{new Date().toLocaleTimeString()}</span>
+							</div>
+							<div className="message receiver">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quas!</p>
+								<span className="time">{new Date().toLocaleTimeString()}</span>
+							</div>
+							<div className="message receiver">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quas!</p>
+								<span className="time">{new Date().toLocaleTimeString()}</span>
+							</div>
+							<div className="message receiver">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quas!</p>
+								<span className="time">{new Date().toLocaleTimeString()}</span>
+							</div>
+							<div className="message receiver">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quas!</p>
+								<span className="time">{new Date().toLocaleTimeString()}</span>
+							</div>
+							<div className="message receiver">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quas!</p>
+								<span className="time">{new Date().toLocaleTimeString()}</span>
+							</div>
+							<div className="message sender">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quas!</p>
+								<span className="time">{new Date().toLocaleTimeString()}</span>
+							</div>
+							<div className="message receiver">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quas!</p>
+								<span className="time">{new Date().toLocaleTimeString()}</span>
+							</div>
+						</div>
 						<div className="sendMessage">
 							<span
 								className="iconify-inline"
