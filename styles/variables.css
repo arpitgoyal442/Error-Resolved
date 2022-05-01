@@ -1,8 +1,13 @@
 html{
-  --primary-background: #f0f8ff;
-  --secondary-background: #dbfaf0;
-  --header-background: #a9a9a9;
+  /* --primary-background: #ffff;
+  --secondary-background: #D2F6FC;
+  --header-background: #280B6F;
+  --active-background: #7984EE; */
+  --primary-background: #EFEFEF;
+  --secondary-background: #DFDFCF;
+  --header-background: #FFC947;
   --active-background: #ea4335;
-  --button: #d87093;
+  
+  --button: #ff9224;
   --navbar-height: 10vh;
 }
