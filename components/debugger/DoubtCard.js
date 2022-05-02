@@ -25,7 +25,7 @@ function DoubtCard({status}) {
 		<div className="doubtCard">
 			<div className="doubtCard_navbar">
 				{/* <p>Active</p> */}
-				<ReactLoading type={status=='active'?"blank":"bars"} color="gray" height="10%" width="10%" />
+				<ReactLoading type={status=='active'?"blank":"bars"} color="gray" height="9%" width="9%" />
 				<h2>Java</h2>
 				<p>12-3-2022</p>
 				
@@ -67,9 +67,6 @@ function DoubtCard({status}) {
 						backgroundColor:'rgba(105,105,105,0.3)',
 						zIndex:'2',
 						
-
-						
-						
 					},
 					content:{
 
@@ -89,34 +86,16 @@ function DoubtCard({status}) {
 
 						 scrollbarWidth:"0",
 						 
-						 
-
-
-						
                         
-						 height:"80%",
+						 
 						width:"50%"
                          
-						 
-
-
-						
-
-
 					}
 				}
 			}
 			 >
 
 				 <DoubtModal offModal={offModal} />
-
-
-
-				
-
-				
-
-            
 
 				
 			</Modal>

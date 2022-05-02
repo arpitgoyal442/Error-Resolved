@@ -1,8 +1,8 @@
 html{
-  --primary-background: #f0f8ff;
-  --secondary-background: #dbfaf0;
+  --primary-background:white;
+  --secondary-background: #E7E6E1;  
   --header-background: #a9a9a9;
   --active-background: #ea4335;
-  --button: #d87093;
+  --button: #008891;
   --navbar-height: 10vh;
 }

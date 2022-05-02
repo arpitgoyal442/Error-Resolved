@@ -91,7 +91,7 @@
     padding: 5px 10px;
     margin: auto auto -1rem;
     width: fit-content;
-    color:black;
+    color:rgb(50,49,49);
     font-size: 14px;
     font-weight: 600;
     border-radius: 20px;
@@ -110,6 +110,7 @@
     font-size: 14px;
     font-weight: 600;
     float: left;
+	color: rgb(50, 49, 49);
 }
 .doubtPage_messages .message.sender .time {
     float: right;

@@ -1,3 +1,4 @@
+import Link from "next/link"
 function StudentDoubtCard() {
 	return (
 		<div className="doubtCard">
@@ -13,7 +14,9 @@ function StudentDoubtCard() {
 				</p>
 			</div>
 			<div className="doubtCard_footer">
-				<button className="doubtCard_request">Open</button>
+
+                <Link href="/student/doubt/123"><button className="doubtCard_request">Open</button></Link>
+				
 				<button className="doubtCard_request">Remove</button>
 			</div>
 		</div>

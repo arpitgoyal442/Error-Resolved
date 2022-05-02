@@ -10,10 +10,12 @@
 	justify-content: space-between;
 	align-items: center;
 	
+	
 	flex-direction: row;
 	color: #212222;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid rgb(168, 47, 47);
 	background-color: var(--primary-background);
+	
 }
 .navbar img {
 	height: 50px;
@@ -63,6 +65,8 @@
 	overflow-y: auto;
 	height: 50vh;
 	min-height: 300px;
+	padding: 5px;
+
 
 	
 	
@@ -89,7 +93,8 @@
   .dropdown-content ul{
 
 	width: fit-content;
-	/* overflow-y: scroll; */
+	
+	
 
 	list-style-type: none;
   }
