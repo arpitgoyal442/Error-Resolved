@@ -46,6 +46,12 @@
 .debuggerFilters__options > button.active{
   background-color: var(--highlight);
 }
+.debuggerFilters__modal hr{
+  margin: 10px 0;
+  border: none;
+  border-bottom: 0.5px solid var(--darkest);
+  /* background-color: #888; */
+}
 @media screen and (min-width: 720px) {
 	.debuggerFilters {
 		display: none;
