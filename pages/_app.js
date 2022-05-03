@@ -19,7 +19,7 @@ import "../styles/debugger/DebuggerProfile.css"
 import "../styles/UserChart.css"
 import "../styles/debugger/DoubtModal.css"
 import "../styles/student/NotificationHandle.css"
-
+import "../styles/student/EditDoubt.css"
 
 
 import Script from "next/script";
