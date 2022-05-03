@@ -20,7 +20,7 @@
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 620px) {
 	.debuggerHome_doubtsContainer {
 		grid-template-columns: repeat(1, 1fr);
 	}

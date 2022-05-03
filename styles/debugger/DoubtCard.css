@@ -1,7 +1,7 @@
 .doubtCard {
 	position: relative;
 	z-index: 1;
-	background-color: var(--secondary-background);
+	background-color: var(--light);
 	height: fit-content;
 	border-radius: 10px;
 	padding: 0.5rem 1rem;
@@ -10,26 +10,24 @@
 	flex-direction: column;
 	margin: 10px;
 }
-.doubtCard_amount{
+.doubtCard_amount {
 	position: absolute;
 	top: 0.5rem;
 	right: 1rem;
 }
-.doubtCard_body{
+.doubtCard_body {
 	margin: 0.5rem 0 1rem;
 }
-.doubtCard_body *{
+.doubtCard_body * {
 	margin: 0;
 }
-.doubtCard_body > div:first-of-type{
+.doubtCard_body > div:first-of-type {
 	display: flex;
 	column-gap: 0.5rem;
 	align-items: center;
 	margin-bottom: 0.5rem;
-	/* flex-direction: column; */
-	/* align-items: center; */
 }
-.doubtCard_body .heading{
+.doubtCard_body .heading {
 	margin: 2px 0;
 }
 .doubtCard_text {
@@ -56,17 +54,17 @@
 	display: flex;
 	column-gap: 0.5rem;
 }
-.doubtCard_footer > button{
+.doubtCard_footer > button {
 	flex: 1;
 }
-.doubtCard_view{
+.doubtCard_view {
 	display: block;
 	width: 100%;
 	padding: 5px;
 	font-weight: 600;
-	color: var(--button);
+	color: var(--highlight);
 	border-radius: 5px;
-	border: 1px solid var(--button);
+	border: 1px solid var(--highlight);
 	background-color: transparent;
 	cursor: pointer;
 }
@@ -79,12 +77,8 @@
 	border-radius: 5px;
 	border: none;
 	cursor: pointer;
-	background-color: var(--button);
-	/* margin: 2px; */
+	background-color: var(--highlight);
 }
-
-
-
 .doubtCard_request:hover {
-	background-color:rgb(43, 163, 163);
+	background-color: var(--secondary-highlight);
 }

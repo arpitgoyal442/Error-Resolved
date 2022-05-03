@@ -1,53 +1,3 @@
-/* .studentHome {
-	position: relative;
-}
-.studentHome_doubtsContainer {
-	flex: 1;
-	flex-wrap: wrap;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-}
-.studentHome_doubtsContainer::-webkit-scrollbar {
-	width: 7px;
-}
-.studentHome_doubtsContainer::-webkit-scrollbar-thumb {
-	background-color: darkgray;
-}
-.student__newDoubt {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-}
-.student__newDoubt > a {
-	margin: 0.5rem 1rem;
-	text-decoration: none;
-	text-align: center;
-	cursor: pointer;
-	background-color: rgb(219, 95, 136);
-	color: white;
-	border: none;
-	border-radius: 5px;
-	padding: 0.5rem 1rem;
-	font-weight: 700;
-	max-width: 200px;
-	width: 100%;
-}
-@media screen and (max-width: 980px) {
-	.studentHome_doubtsContainer {
-		grid-template-columns: repeat(3, 1fr);
-	}
-}
-@media screen and (max-width: 720px) {
-	.studentHome_doubtsContainer {
-		grid-template-columns: repeat(2, 1fr);
-	}
-}
-@media screen and (max-width: 420px) {
-	.studentHome_doubtsContainer {
-		grid-template-columns: repeat(1, 1fr);
-	}
-} */
-
 .studentHome{
 	margin-top: 0.5rem;
 	display: flex;
@@ -72,7 +22,7 @@
 	width: fit-content;
 	margin: 1rem auto;
 	font-weight: 500;
-	background-color: var(--button);
+	background-color: var(--highlight);
 	border-radius: 5px;
 	padding: 0.5rem 1rem;
 	cursor: pointer;
@@ -90,7 +40,6 @@
 	row-gap: 1rem;
 	margin-top: 3rem;
 }
-/* w-full mx-auto py-1 px-4 rounded-md border border-gray-5 */
 .studentLeft .filter_btn{
 	width: 100%;
 	padding: 0.4rem 1rem;
@@ -99,13 +48,14 @@
 	cursor: pointer;
 }
 .studentLeft .filter_btn.active{
-	background-color: var(--header-background);
+	background-color: var(--darkest);
 }
 .studentRight{
 	flex: 1;
 	overflow-y: scroll;
 }
 .studentMobile .newDoubt{
+	color: white;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -116,7 +66,7 @@
 	font-weight: 500;
 	border-radius: 5px;
 	cursor: pointer;
-	background-color: var(--button);
+	background-color: var(--highlight);
 	transition: all 150ms ease-in-out;
 }
 .studentMobile .newDoubt:hover{
@@ -128,16 +78,34 @@
 	display: flex;
 	justify-content: space-evenly;
 	border-radius: 5px;
-	background-color: #fff;
+	background-color: var(--light);
 }
 .studentMobile .filter_btn{
+	user-select: none;
 	padding: 0 0.5rem;
+	padding-bottom: 3px;
 	cursor: pointer;
-	border: 0 solid var(--header-background);
+	position: relative;
 }
-.studentMobile .filter_btn.active{
-	/* border-bottom-style: solid; */
-	border-bottom-width: 2px;
+.studentMobile .filter_btn.active::after{
+	content: '';
+	position: absolute;
+	height: 2px;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	background-color: var(--darkest);
+	animation: activeIndicator 0.2s ease-in-out;
+}
+@keyframes activeIndicator {
+	from{
+		width: 0%;
+		left: 50%;
+	}
+	to{
+		width: 100%;
+		left: 0;
+	}
 }
 @media only screen and (max-width: 640px){
 	.studentHome{
@@ -153,7 +121,7 @@
 }
 @media only screen and (min-width: 640px){
 	.studentHome{
-		padding: 0 1rem;
+		/* padding: 0 1rem; */
 		flex-direction: row;
 	}
 	.studentMobile{
