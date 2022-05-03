@@ -26,26 +26,18 @@
 
     border-radius: 5%;
     margin-right: 2px;
-    background-color: var(--button);
+    background-color: var(--highlight);
     color: white;
     font: 400;
     border: 0;
     font-size: large;
 
 }
-
-
-
 #studentLeftbar_add{
-
-    /* color:var(--secondary-background) */
     color: rgb(58, 58, 58);
     align-self: center;
-    
 }
-
 #studentLeftbar_add :hover{
     cursor: pointer;
     color:black;
-
 }

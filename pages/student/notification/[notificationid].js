@@ -16,7 +16,7 @@ function notificationHandle(){
               <div className="notificationHandle_header_right">
 
                   <h1>Dhruv Pasricha</h1>
-                  <p> <b>Rating : </b>(4/5) <span class="iconify-inline" data-icon="ant-design:star-filled" style={{color:'rgb(60, 59, 5'}}></span></p>
+                  <p> <b>Rating : </b>(4/5) <span className="iconify-inline" data-icon="ant-design:star-filled" style={{color:'rgb(60, 59, 5'}}></span></p>
                   <p> <b>Speciality :</b>  Java , c++ , Competitive programming</p>
                   <p><b>Total doubts solved:</b> 56</p>
 

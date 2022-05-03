@@ -1,8 +1,6 @@
 .signin{
 	height: 100vh;
 	width: 100vw;
-	background-color: var(--primary-background);
-
 	display: flex;
 	flex-direction: column;
 	justify-content:space-around;
@@ -46,7 +44,7 @@
 	font-size: larger;
 	margin: 2%;
 	border: 1px solid black;
-	background-color: var(--button);
+	background-color: var(--highlight);
 
 }
 

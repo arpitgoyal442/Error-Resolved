@@ -22,11 +22,11 @@
 }
 
 .leftbar::-webkit-scrollbar-thumb {
-	background-color: var(--button) !important;
+	background-color: var(--highlight) !important;
 }
 
 .leftbar ul li:hover {
-	color: var(--button);
+	color: var(--highlight);
 	cursor: pointer;
 }
 .leftbar__filterHead{
@@ -57,7 +57,7 @@
     cursor: pointer;
 }
 .leftbar__filter.active{
-    background-color: var(--button);
+    background-color: var(--highlight);
     color: white;
 }
 @media screen and (max-width: 720px) {

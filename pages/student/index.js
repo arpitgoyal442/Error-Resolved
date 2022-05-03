@@ -3,7 +3,6 @@ import { useState } from "react";
 import Navbar from "../../components/Navbar";
 import PlusIcon from "@heroicons/react/solid/PlusIcon";
 import DoubtCard from "../../components/student/DoubtCard";
-import Filters from "../../components/student/Filters";
 
 function StudentHome() {
 	const [status, setStatus] = useState(1);
@@ -17,9 +16,6 @@ function StudentHome() {
 				{/* mobile-view options panel */}
 				<div className="studentMobile">
 					<Link href="/student/new">
-						
-						{/* "mb-2 font-medium flex sm:hidden items-center justify-center gap-x-2 bg-light rounded-md px-4 py-2 w-full cursor-pointer hover:shadow-md transition duration-150 */}
-
 						<div className="newDoubt">
 							<PlusIcon height={"1.5rem"} width={"1.5rem"} />
 							<p>New Doubt</p>
@@ -94,43 +90,3 @@ function StudentHome() {
 }
 
 export default StudentHome;
-
-{
-	/* <div className="studentHome">
-				<>
-					<Filters status={status} setStatus={setStatus} />
-					<div className="student__newDoubt">
-						<Link href="/student/new-doubt">New Doubt</Link>
-					</div>
-					<div className="studentHome_doubtsContainer">
-						<DoubtCard />
-						<DoubtCard />
-						<DoubtCard />
-						<DoubtCard />
-						<DoubtCard />
-						<DoubtCard />
-						<DoubtCard />
-						<DoubtCard />
-						<DoubtCard />
-						<DoubtCard />
-						<DoubtCard />
-						<DoubtCard />
-						<DoubtCard />
-						<DoubtCard />
-						<DoubtCard />
-						<DoubtCard />
-						<DoubtCard />
-						<DoubtCard />
-						<DoubtCard />
-						<DoubtCard />
-						<DoubtCard />
-						<DoubtCard />
-						<DoubtCard />
-						<DoubtCard />
-						<DoubtCard />
-						<DoubtCard />
-						<DoubtCard />
-					</div>
-				</>
-			</div> */
-}
