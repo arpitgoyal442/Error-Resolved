@@ -26,7 +26,7 @@ const topics = [
 	"Node.js",
 ];
 
-function add() {
+function Add() {
 	const [language, setLanguage] = useState(topics[0]),
 		[difficulty, setDifficulty] = useState(1),
 		[screenshot, setScreenshot] = useState(null),
@@ -90,4 +90,4 @@ function add() {
 	);
 }
 
-export default add;
+export default Add;

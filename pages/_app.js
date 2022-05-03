@@ -11,15 +11,14 @@ import "../styles/debugger/Leftbar.css"
 import "../styles/debugger/DebuggerHome.css"
 import "../styles/debugger/DebuggerFilters.css"
 import "../styles/student/StudentHome.css"
-import "../styles/student/studentLeftbar.css"
+import "../styles/student/StudentLeftbar.css"
+import "../styles/student/StudentDoubtCard.css"
 import "../styles/student/Filters.css"
 import "../styles/student/NewDoubt.css"
 import "../styles/debugger/DebuggerProfile.css"
 import "../styles/UserChart.css"
 import "../styles/debugger/DoubtModal.css"
 import "../styles/student/NotificationHandle.css"
-
-// import 'bootstrap/dist/css/bootstrap.css'
 
 
 

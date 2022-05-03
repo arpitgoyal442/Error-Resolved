@@ -118,6 +118,7 @@
 }
 .doubtPage_messages .message.sender p {
     background-color: var(--button);
+	color: white;
 }
 .doubtPage_messages .message.sender {
     margin-left: auto;
