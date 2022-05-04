@@ -4,11 +4,13 @@ import Navbar from "../components/Navbar";
 import ChevronRight from "@heroicons/react/solid/ChevronRightIcon";
 import CameraIcon from "@heroicons/react/outline/CameraIcon";
 import Modal from "../components/Modal";
-import NameForm from "../components/profileForms/NameForm";
-import GenderForm from "../components/profileForms/GenderForm";
-import SkillsForm from "../components/profileForms/SkillsForm";
-import PhoneForm from "../components/profileForms/PhoneForm";
-import SocialForm from "../components/profileForms/SocialForm";
+import NameForm from "../components/profile/profileForms/NameForm";
+import GenderForm from "../components/profile/profileForms/GenderForm";
+import SkillsForm from "../components/profile/profileForms/SkillsForm";
+import PhoneForm from "../components/profile/profileForms/PhoneForm";
+import SocialForm from "../components/profile/profileForms/SocialForm";
+import DoubtsChart from "../components/profile/DoubtsChart";
+import TopicsChart from "../components/profile/TopicsChart";
 
 const DebuggerProfile = () => {
 	const [showModal, setShowModal] = useState(false),
@@ -60,127 +62,141 @@ const DebuggerProfile = () => {
 						Manage your info to make us work better for you.
 					</p>
 				</div>
-				<div className="overflow-hidden max-w-2xl mx-auto my-2 md:my-4 pt-4 rounded-md border">
-					<h2 className="text-xl ml-4 md:ml-8 mb-2 underline underline-offset-4">Basic Info</h2>
-					<div
-						onClick={openNameForm}
-						className="flex flex-col gap-y-1 md:flex-row md:items-center py-4 hover:bg-gray-100 px-4 md:px-8 cursor-pointer"
-					>
-						<p className="flex-[0.25] text-xs font-medium text-gray-500 uppercase">Name</p>
-						<div className="flex-[0.75] flex items-center justify-between">
-							<p className="flex-1">Kashish Jain</p>
-							<ChevronRight className="h-6 w-6 flex-[0.1]" />
-						</div>
-					</div>
-					<div
-						onClick={openGenderForm}
-						className="flex flex-col gap-y-1 md:flex-row md:items-center py-4 border-t hover:bg-gray-100 px-4 md:px-8 cursor-pointer"
-					>
-						<p className="flex-[0.25] text-xs font-medium text-gray-500 uppercase">Gender</p>
-						<div className="flex-[0.75] flex items-center justify-between">
-							<p className="flex-1">Male</p>
-							<ChevronRight className="h-6 w-6 flex-[0.1]" />
-						</div>
-					</div>
-				</div>
-				<div className="overflow-hidden max-w-2xl mx-auto my-2 md:my-4 pt-4 rounded-md border">
-					<h2 className="text-xl ml-4 md:ml-8 mb-2 underline underline-offset-4">Skills</h2>
-					<div
-						onClick={openSkillsForm}
-						className="flex flex-col gap-y-1 md:flex-row md:items-center py-4 hover:bg-gray-100 px-4 md:px-8 cursor-pointer"
-					>
-						<p className="flex-[0.25] text-xs font-medium text-gray-500 uppercase">Your Skills</p>
-						<div className="flex-[0.75] flex items-center justify-between">
-							<p className="max-h-12 overflow-y-scroll no-scrollbar flex-1">
-								ReactJs, HTML, CSS, JavaScript, MongoDB, ExpressJs, NodeJs, C++, Firebase,
-								MERN, ReactJs, HTML, CSS, JavaScript, MongoDB, ExpressJs, NodeJs, C++,
-								Firebase, MERN
-							</p>
-							<ChevronRight className="h-6 w-6 flex-[0.1]" />
-						</div>
-					</div>
-					<div className="flex flex-col gap-y-1 md:flex-row md:items-center py-4 border-t px-4 md:px-8">
-						<p className="flex-[0.25] text-xs font-medium text-gray-500 uppercase">Endorsed</p>
-						<p className="flex-[0.75]">ReactJs, HTML, CSS, JavaScript, MongoDB</p>
-					</div>
-				</div>
-				<div className="overflow-hidden max-w-2xl mx-auto my-2 md:my-4 pt-4 rounded-md border">
-					<h2 className="text-xl ml-4 md:ml-8 mb-2 underline underline-offset-4">Contact Info</h2>
-					<div className="flex flex-col gap-y-1 md:flex-row md:items-center py-4 px-4 md:px-8">
-						<p className="flex-[0.25] text-xs font-medium text-gray-500 uppercase">Email</p>
-						<p className="flex-[0.75]">jainabhishek7204@gmail.com</p>
-					</div>
-					<div
-						onClick={openPhoneForm}
-						className="flex flex-col gap-y-1 md:flex-row md:items-center py-4 border-t hover:bg-gray-100 px-4 md:px-8 cursor-pointer"
-					>
-						<p className="flex-[0.25] text-xs font-medium text-gray-500 uppercase">Phone</p>
-						<div className="flex-[0.75] flex items-center justify-between">
-							<p className="flex-1">+918570853624</p>
-							<ChevronRight className="h-6 w-6 flex-[0.1]" />
-						</div>
-					</div>
-				</div>
-				<div className="overflow-hidden max-w-2xl mx-auto my-2 md:my-4 pt-4 rounded-md border">
-					<h2 className="text-xl ml-4 md:ml-8 mb-2 underline underline-offset-4">
-						Social Media Handles
-					</h2>
-					<div onClick={openSocialForm} className="flex flex-col gap-y-1 md:flex-row md:items-center py-4 px-4 md:px-8 hover:bg-gray-100 cursor-pointer">
-						<p className="flex-[0.25] text-xs font-medium text-gray-500 uppercase">Linkedin</p>
-						<div className="flex-[0.75] flex items-center justify-between">
-							<a
-								href="https://linkedin.com/in/kashishjain04"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="w-max text-highlight font-medium"
+				<div className="w-full flex flex-col md:flex-row gap-x-2">
+					<div className="md:w-1/2">
+						<div className="overflow-hidden max-w-2xl mx-auto my-2 md:my-4 pt-4 rounded-md border">
+							<h2 className="text-xl ml-4 md:ml-8 mb-2 underline underline-offset-4">Basic Info</h2>
+							<div
+								onClick={openNameForm}
+								className="flex flex-col gap-y-1 md:flex-row md:items-center py-4 hover:bg-gray-100 px-4 md:px-8 cursor-pointer"
 							>
-								kashishjain04
-							</a>
-							<ChevronRight className="h-6 w-6 flex-[0.1]" />
+								<p className="flex-[0.25] text-xs font-medium text-gray-500 uppercase">Name</p>
+								<div className="flex-[0.75] flex items-center justify-between">
+									<p className="flex-1">Kashish Jain</p>
+									<ChevronRight className="h-6 w-6 flex-[0.1]" />
+								</div>
+							</div>
+							<div
+								onClick={openGenderForm}
+								className="flex flex-col gap-y-1 md:flex-row md:items-center py-4 border-t hover:bg-gray-100 px-4 md:px-8 cursor-pointer"
+							>
+								<p className="flex-[0.25] text-xs font-medium text-gray-500 uppercase">Gender</p>
+								<div className="flex-[0.75] flex items-center justify-between">
+									<p className="flex-1">Male</p>
+									<ChevronRight className="h-6 w-6 flex-[0.1]" />
+								</div>
+							</div>
+						</div>
+						<div className="overflow-hidden max-w-2xl mx-auto my-2 md:my-4 pt-4 rounded-md border">
+							<h2 className="text-xl ml-4 md:ml-8 mb-2 underline underline-offset-4">Skills</h2>
+							<div
+								onClick={openSkillsForm}
+								className="flex flex-col gap-y-1 md:flex-row md:items-center py-4 hover:bg-gray-100 px-4 md:px-8 cursor-pointer"
+							>
+								<p className="flex-[0.25] text-xs font-medium text-gray-500 uppercase">Your Skills</p>
+								<div className="flex-[0.75] flex items-center justify-between">
+									<p className="max-h-12 overflow-y-scroll no-scrollbar flex-1">
+										ReactJs, HTML, CSS, JavaScript, MongoDB, ExpressJs, NodeJs, C++, Firebase,
+										MERN, ReactJs, HTML, CSS, JavaScript, MongoDB, ExpressJs, NodeJs, C++,
+										Firebase, MERN
+									</p>
+									<ChevronRight className="h-6 w-6 flex-[0.1]" />
+								</div>
+							</div>
+							<div className="flex flex-col gap-y-1 md:flex-row md:items-center py-4 border-t px-4 md:px-8">
+								<p className="flex-[0.25] text-xs font-medium text-gray-500 uppercase">Endorsed</p>
+								<p className="flex-[0.75]">ReactJs, HTML, CSS, JavaScript, MongoDB</p>
+							</div>
+						</div>
+						<div className="overflow-hidden max-w-2xl mx-auto my-2 md:my-4 pt-4 rounded-md border">
+							<h2 className="text-xl ml-4 md:ml-8 mb-2 underline underline-offset-4">Contact Info</h2>
+							<div className="flex flex-col gap-y-1 md:flex-row md:items-center py-4 px-4 md:px-8">
+								<p className="flex-[0.25] text-xs font-medium text-gray-500 uppercase">Email</p>
+								<p className="flex-[0.75]">jainabhishek7204@gmail.com</p>
+							</div>
+							<div
+								onClick={openPhoneForm}
+								className="flex flex-col gap-y-1 md:flex-row md:items-center py-4 border-t hover:bg-gray-100 px-4 md:px-8 cursor-pointer"
+							>
+								<p className="flex-[0.25] text-xs font-medium text-gray-500 uppercase">Phone</p>
+								<div className="flex-[0.75] flex items-center justify-between">
+									<p className="flex-1">+918570853624</p>
+									<ChevronRight className="h-6 w-6 flex-[0.1]" />
+								</div>
+							</div>
+						</div>
+						<div className="overflow-hidden max-w-2xl mx-auto my-2 md:my-4 pt-4 rounded-md border">
+							<h2 className="text-xl ml-4 md:ml-8 mb-2 underline underline-offset-4">
+								Social Media Handles
+							</h2>
+							<div onClick={openSocialForm} className="flex flex-col gap-y-1 md:flex-row md:items-center py-4 px-4 md:px-8 hover:bg-gray-100 cursor-pointer">
+								<p className="flex-[0.25] text-xs font-medium text-gray-500 uppercase">Linkedin</p>
+								<div className="flex-[0.75] flex items-center justify-between">
+									<a
+										href="https://linkedin.com/in/kashishjain04"
+										target="_blank"
+										rel="noopener noreferrer"
+										className="w-max text-highlight font-medium"
+									>
+										kashishjain04
+									</a>
+									<ChevronRight className="h-6 w-6 flex-[0.1]" />
+								</div>
+							</div>
+							<div onClick={openSocialForm} className="flex flex-col gap-y-1 border-t md:flex-row md:items-center py-4 px-4 md:px-8 hover:bg-gray-100 cursor-pointer">
+								<p className="flex-[0.25] text-xs font-medium text-gray-500 uppercase">Github</p>
+								<div className="flex-[0.75] flex items-center justify-between">
+									<a
+										href="https://github.com/Kashishjain04"
+										target="_blank"
+										rel="noopener noreferrer"
+										className="w-max text-highlight font-medium"
+									>
+										Kashishjain04
+									</a>
+									<ChevronRight className="h-6 w-6 flex-[0.1]" />
+								</div>
+							</div>
+							<div onClick={openSocialForm} className="flex flex-col gap-y-1 border-t md:flex-row md:items-center py-4 px-4 md:px-8 hover:bg-gray-100 cursor-pointer">
+								<p className="flex-[0.25] text-xs font-medium text-gray-500 uppercase">Instagram</p>
+								<div className="flex-[0.75] flex items-center justify-between">
+									<a
+										href="https://www.instagram.com/kashish_jain04"
+										target="_blank"
+										rel="noopener noreferrer"
+										className="w-max text-highlight font-medium"
+									>
+										kashish_jain04
+									</a>
+									<ChevronRight className="h-6 w-6 flex-[0.1]" />
+								</div>
+							</div>
+							<div onClick={openSocialForm} className="flex flex-col gap-y-1 border-t md:flex-row md:items-center py-4 px-4 md:px-8 hover:bg-gray-100 cursor-pointer">
+								<p className="flex-[0.25] text-xs font-medium text-gray-500 uppercase">
+									Twitter
+								</p>
+								<div className="flex-[0.75] flex items-center justify-between">
+									<a
+										href="https://twitter.com/Kashish_jain04"
+										target="_blank"
+										rel="noopener noreferrer"
+										className="w-max text-highlight font-medium"
+									>
+										Kashish_jain04
+									</a>
+									<ChevronRight className="h-6 w-6 flex-[0.1]" />
+								</div>
+							</div>
 						</div>
 					</div>
-					<div onClick={openSocialForm} className="flex flex-col gap-y-1 border-t md:flex-row md:items-center py-4 px-4 md:px-8 hover:bg-gray-100 cursor-pointer">
-						<p className="flex-[0.25] text-xs font-medium text-gray-500 uppercase">Github</p>
-						<div className="flex-[0.75] flex items-center justify-between">
-							<a
-								href="https://github.com/Kashishjain04"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="w-max text-highlight font-medium"
-							>
-								Kashishjain04
-							</a>
-							<ChevronRight className="h-6 w-6 flex-[0.1]" />
+					<div className="md:w-1/2">
+						<div className="overflow-hidden max-w-2xl mx-auto my-2 md:my-4 pt-4 rounded-md border">
+						<h2 className="text-xl ml-4 md:ml-8 mb-2 underline underline-offset-4">Doubts Solved</h2>
+							<DoubtsChart />
 						</div>
-					</div>
-					<div onClick={openSocialForm} className="flex flex-col gap-y-1 border-t md:flex-row md:items-center py-4 px-4 md:px-8 hover:bg-gray-100 cursor-pointer">
-						<p className="flex-[0.25] text-xs font-medium text-gray-500 uppercase">Instagram</p>
-						<div className="flex-[0.75] flex items-center justify-between">
-							<a
-								href="https://www.instagram.com/kashish_jain04"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="w-max text-highlight font-medium"
-							>
-								kashish_jain04
-							</a>
-							<ChevronRight className="h-6 w-6 flex-[0.1]" />
-						</div>
-					</div>
-					<div onClick={openSocialForm} className="flex flex-col gap-y-1 border-t md:flex-row md:items-center py-4 px-4 md:px-8 hover:bg-gray-100 cursor-pointer">
-						<p className="flex-[0.25] text-xs font-medium text-gray-500 uppercase">
-							Twitter
-						</p>
-						<div className="flex-[0.75] flex items-center justify-between">
-							<a
-								href="https://twitter.com/Kashish_jain04"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="w-max text-highlight font-medium"
-							>
-								Kashish_jain04
-							</a>
-							<ChevronRight className="h-6 w-6 flex-[0.1]" />
+						<div className="overflow-hidden max-w-2xl mx-auto my-2 md:my-4 pt-4 rounded-md border">
+						<h2 className="text-xl ml-4 md:ml-8 mb-2 underline underline-offset-4">Favourite Topics</h2>
+							<TopicsChart />
 						</div>
 					</div>
 				</div>
