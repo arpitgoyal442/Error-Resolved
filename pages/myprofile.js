@@ -1,18 +1,18 @@
-import {useState} from "react";
+import { useState } from "react";
 import Head from "next/head";
-import Navbar from "../../components/Navbar";
+import Navbar from "../components/Navbar";
 import ChevronRight from "@heroicons/react/solid/ChevronRightIcon";
 import CameraIcon from "@heroicons/react/outline/CameraIcon";
-import Modal from "../../components/Modal";
-import NameForm from "../../components/debugger/profileForms/NameForm";
-import GenderForm from "../../components/debugger/profileForms/GenderForm";
-import SkillsForm from "../../components/debugger/profileForms/SkillsForm";
-import PhoneForm from "../../components/debugger/profileForms/PhoneForm";
+import Modal from "../components/Modal";
+import NameForm from "../components/profileForms/NameForm";
+import GenderForm from "../components/profileForms/GenderForm";
+import SkillsForm from "../components/profileForms/SkillsForm";
+import PhoneForm from "../components/profileForms/PhoneForm";
+import SocialForm from "../components/profileForms/SocialForm";
 
 const DebuggerProfile = () => {
-  const [showModal, setShowModal] = useState(false),
-  [FormComp, setFormComp] = useState(null);
-
+	const [showModal, setShowModal] = useState(false),
+		[FormComp, setFormComp] = useState(null);
 
 	const openNameForm = () => {
 		setFormComp(<NameForm setShowModal={setShowModal} />);
@@ -30,14 +30,20 @@ const DebuggerProfile = () => {
 		setFormComp(<PhoneForm setShowModal={setShowModal} />);
 		setShowModal(true);
 	};
+	const openSocialForm = () => {
+		setFormComp(<SocialForm setShowModal={setShowModal} />);
+		setShowModal(true);
+	};
 	return (
 		<div>
 			<Head>
 				<title>Profile | Debugger</title>
 			</Head>
 			<Navbar />
-			<Modal showModal={showModal} setShowModal={setShowModal}>{FormComp}</Modal>
-			<main className="mt-navbar p-2">
+			<Modal showModal={showModal} setShowModal={setShowModal}>
+				{FormComp}
+			</Modal>
+			<main className="p-2">
 				<div className="text-center mb-8">
 					<div className="z-0 group border rounded-full mx-auto w-32 h-32 lg:w-40 lg:h-40 relative overflow-hidden">
 						<img
@@ -79,10 +85,17 @@ const DebuggerProfile = () => {
 				</div>
 				<div className="overflow-hidden max-w-2xl mx-auto my-2 md:my-4 pt-4 rounded-md border">
 					<h2 className="text-xl ml-4 md:ml-8 mb-2 underline underline-offset-4">Skills</h2>
-					<div onClick={openSkillsForm} className="flex flex-col gap-y-1 md:flex-row md:items-center py-4 hover:bg-gray-100 px-4 md:px-8 cursor-pointer">
+					<div
+						onClick={openSkillsForm}
+						className="flex flex-col gap-y-1 md:flex-row md:items-center py-4 hover:bg-gray-100 px-4 md:px-8 cursor-pointer"
+					>
 						<p className="flex-[0.25] text-xs font-medium text-gray-500 uppercase">Your Skills</p>
 						<div className="flex-[0.75] flex items-center justify-between">
-							<p className="max-h-12 overflow-y-scroll no-scrollbar flex-1">ReactJs, HTML, CSS, JavaScript, MongoDB, ExpressJs, NodeJs, C++, Firebase, MERN, ReactJs, HTML, CSS, JavaScript, MongoDB, ExpressJs, NodeJs, C++, Firebase, MERN</p>
+							<p className="max-h-12 overflow-y-scroll no-scrollbar flex-1">
+								ReactJs, HTML, CSS, JavaScript, MongoDB, ExpressJs, NodeJs, C++, Firebase,
+								MERN, ReactJs, HTML, CSS, JavaScript, MongoDB, ExpressJs, NodeJs, C++,
+								Firebase, MERN
+							</p>
 							<ChevronRight className="h-6 w-6 flex-[0.1]" />
 						</div>
 					</div>
@@ -97,10 +110,76 @@ const DebuggerProfile = () => {
 						<p className="flex-[0.25] text-xs font-medium text-gray-500 uppercase">Email</p>
 						<p className="flex-[0.75]">jainabhishek7204@gmail.com</p>
 					</div>
-					<div onClick={openPhoneForm} className="flex flex-col gap-y-1 md:flex-row md:items-center py-4 border-t hover:bg-gray-100 px-4 md:px-8 cursor-pointer">
+					<div
+						onClick={openPhoneForm}
+						className="flex flex-col gap-y-1 md:flex-row md:items-center py-4 border-t hover:bg-gray-100 px-4 md:px-8 cursor-pointer"
+					>
 						<p className="flex-[0.25] text-xs font-medium text-gray-500 uppercase">Phone</p>
 						<div className="flex-[0.75] flex items-center justify-between">
 							<p className="flex-1">+918570853624</p>
+							<ChevronRight className="h-6 w-6 flex-[0.1]" />
+						</div>
+					</div>
+				</div>
+				<div className="overflow-hidden max-w-2xl mx-auto my-2 md:my-4 pt-4 rounded-md border">
+					<h2 className="text-xl ml-4 md:ml-8 mb-2 underline underline-offset-4">
+						Social Media Handles
+					</h2>
+					<div onClick={openSocialForm} className="flex flex-col gap-y-1 md:flex-row md:items-center py-4 px-4 md:px-8 hover:bg-gray-100 cursor-pointer">
+						<p className="flex-[0.25] text-xs font-medium text-gray-500 uppercase">Linkedin</p>
+						<div className="flex-[0.75] flex items-center justify-between">
+							<a
+								href="https://linkedin.com/in/kashishjain04"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="w-max text-highlight font-medium"
+							>
+								kashishjain04
+							</a>
+							<ChevronRight className="h-6 w-6 flex-[0.1]" />
+						</div>
+					</div>
+					<div onClick={openSocialForm} className="flex flex-col gap-y-1 border-t md:flex-row md:items-center py-4 px-4 md:px-8 hover:bg-gray-100 cursor-pointer">
+						<p className="flex-[0.25] text-xs font-medium text-gray-500 uppercase">Github</p>
+						<div className="flex-[0.75] flex items-center justify-between">
+							<a
+								href="https://github.com/Kashishjain04"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="w-max text-highlight font-medium"
+							>
+								Kashishjain04
+							</a>
+							<ChevronRight className="h-6 w-6 flex-[0.1]" />
+						</div>
+					</div>
+					<div onClick={openSocialForm} className="flex flex-col gap-y-1 border-t md:flex-row md:items-center py-4 px-4 md:px-8 hover:bg-gray-100 cursor-pointer">
+						<p className="flex-[0.25] text-xs font-medium text-gray-500 uppercase">Instagram</p>
+						<div className="flex-[0.75] flex items-center justify-between">
+							<a
+								href="https://www.instagram.com/kashish_jain04"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="w-max text-highlight font-medium"
+							>
+								kashish_jain04
+							</a>
+							<ChevronRight className="h-6 w-6 flex-[0.1]" />
+						</div>
+					</div>
+					<div onClick={openSocialForm} className="flex flex-col gap-y-1 border-t md:flex-row md:items-center py-4 px-4 md:px-8 hover:bg-gray-100 cursor-pointer">
+						<p className="flex-[0.25] text-xs font-medium text-gray-500 uppercase">
+							Twitter
+						</p>
+						<div className="flex-[0.75] flex items-center justify-between">
+							<a
+								href="https://twitter.com/Kashish_jain04"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="w-max text-highlight font-medium"
+							>
+								Kashish_jain04
+							</a>
 							<ChevronRight className="h-6 w-6 flex-[0.1]" />
 						</div>
 					</div>

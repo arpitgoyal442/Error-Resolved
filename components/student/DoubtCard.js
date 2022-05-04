@@ -10,7 +10,7 @@ function StudentDoubtCard() {
 		<div className="studentDoubtCard">
 
 			<div onClick={ ()=>{  showoptions?setoptions(false):setoptions(true) } }>
-			<span  class="iconify-inline studentDoubtCard_options" data-icon="bx:dots-vertical-rounded" data-width="25" data-height="25"></span>
+			<span  className="iconify-inline studentDoubtCard_options" data-icon="bx:dots-vertical-rounded" data-width="25" data-height="25"></span>
 			</div>
 			
 			<h4 className="studentDoubtCard_topic">Java</h4>
@@ -23,17 +23,17 @@ function StudentDoubtCard() {
 						<ul>
 							<Link href="/student/doubt/123">
 								<div>
-						<span class="iconify-inline" data-icon="bx:window-open" data-width="25" data-height="25"></span>
+						<span className="iconify-inline" data-icon="bx:window-open" data-width="25" data-height="25"></span>
 						</div>
 						</Link>
 
 						<Link href="/student/edit/123">
 						<div>
-						<span class="iconify-inline" data-icon="ci:edit" data-width="25" data-height="25"></span>
+						<span className="iconify-inline" data-icon="ci:edit" data-width="25" data-height="25"></span>
 						</div>
 						</Link>
 						<div>
-						<span class="iconify-inline" data-icon="fluent:delete-24-filled" data-width="25" data-height="25"></span>
+						<span className="iconify-inline" data-icon="fluent:delete-24-filled" data-width="25" data-height="25"></span>
 						</div>
 						</ul>
 					</div>

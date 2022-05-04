@@ -47,11 +47,11 @@ const SkillsForm = ({setShowModal}) => {
   return (
     <form className="max-w-xl w-full p-4 rounded-lg border bg-white" onSubmit={(e) => e.preventDefault()}>
       <h2 className="text-xl font-medium -mx-4 px-4 pb-4 mb-4 border-b">Skills</h2>
-      <div className='grid grid-cols-2 gap-1'>
+      <div className='grid grid-cols-2 p-3 gap-2 max-h-96 overflow-y-scroll no-scrollbar'>
         {tempSkills.map((skill, index) => (
-          <div className='relative group'>
+          <div key={index} className='relative group'>
             <XIcon onClick={() => removeSkill(index)} className='hidden group-hover:block h-6 w-6 absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 z-20 cursor-pointer' />
-            <input className='w-full outline-none p-1 text-center border rounded-md' type="text" value={skill} onChange={(e) => updateSingleSkill(e.target.value, index)} />
+            <input autoFocus className='w-full outline-none p-1 text-center border rounded-md' type="text" value={skill} onChange={(e) => updateSingleSkill(e.target.value, index)} />
           </div>
         ))}
         <div className='relative group'>
@@ -62,11 +62,11 @@ const SkillsForm = ({setShowModal}) => {
       <div className="border-t mt-2 pt-2 -mx-4 px-4 flex items-center justify-end gap-x-2">
 				<button
 					onClick={cancel}
-					className="border border-blue-500 text-blue-500 px-3 py-1 rounded-lg hover:shadow-md"
+					className="border border-highlight text-highlight px-3 py-1 rounded-lg hover:shadow-md"
 				>
 					Cancel
 				</button>
-				<button type="submit" className="bg-blue-500 text-white px-3 py-1 rounded-lg hover:shadow-md">
+				<button type="submit" className="bg-highlight text-white px-3 py-1 rounded-lg hover:shadow-md">
 					Save
 				</button>
 			</div>

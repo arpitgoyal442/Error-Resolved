@@ -36,11 +36,11 @@ const NameForm = ({ setShowModal }) => {
 			<div className="mt-4 flex items-center justify-end gap-x-2">
 				<button
 					onClick={cancel}
-					className="border border-blue-500 text-blue-500 px-3 py-1 rounded-lg hover:shadow-md"
+					className="border border-highlight text-highlight px-3 py-1 rounded-lg hover:shadow-md"
 				>
 					Cancel
 				</button>
-				<button type="submit" className="bg-blue-500 text-white px-3 py-1 rounded-lg hover:shadow-md">Save</button>
+				<button type="submit" className="bg-highlight text-white px-3 py-1 rounded-lg hover:shadow-md">Save</button>
 			</div>
 		</form>
 	);
