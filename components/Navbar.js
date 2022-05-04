@@ -10,8 +10,8 @@ function Navbar() {
     return unsubscribe;
   }, [])
 	const handleScroll = () => {
-    if(window.scrollY>0) navRef.current.classList.add("navbar_shadow");
-    else navRef.current.classList.remove("navbar_shadow");
+    if(window.scrollY>0) navRef?.current?.classList?.add("navbar_shadow");
+    else navRef?.current?.classList?.remove("navbar_shadow");
   }
 	return (
 		<div className="navbar" ref={navRef}>
