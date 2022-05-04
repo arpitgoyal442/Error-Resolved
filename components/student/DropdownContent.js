@@ -10,7 +10,7 @@ function DropdownContent(){
         <>
       
         <Link href="/student/notification/123">
-        <p> <b> Arpit Goyal</b> Is requesting to solve Java Doubt</p>
+        <p> <b>Dhruv Pasricha</b> Is requesting to solve Java Doubt</p>
         </Link>
         
        
