@@ -158,6 +158,22 @@ const DebuggerProfile = () => {
 								</div>
 							</div>
 							<div onClick={openSocialForm} className="flex flex-col gap-y-1 border-t md:flex-row md:items-center py-4 px-4 md:px-8 hover:bg-gray-100 cursor-pointer">
+								<p className="flex-[0.25] text-xs font-medium text-gray-500 uppercase">
+									StackOverflow
+								</p>
+								<div className="flex-[0.75] flex items-center justify-between">
+									<a
+										href="https://stackoverflow.com/users/15934413"
+										target="_blank"
+										rel="noopener noreferrer"
+										className="w-max text-highlight font-medium"
+									>
+										kashish-jain
+									</a>
+									<ChevronRight className="h-6 w-6 flex-[0.1]" />
+								</div>
+							</div>
+							<div onClick={openSocialForm} className="flex flex-col gap-y-1 border-t md:flex-row md:items-center py-4 px-4 md:px-8 hover:bg-gray-100 cursor-pointer">
 								<p className="flex-[0.25] text-xs font-medium text-gray-500 uppercase">Instagram</p>
 								<div className="flex-[0.75] flex items-center justify-between">
 									<a
@@ -171,27 +187,11 @@ const DebuggerProfile = () => {
 									<ChevronRight className="h-6 w-6 flex-[0.1]" />
 								</div>
 							</div>
-							<div onClick={openSocialForm} className="flex flex-col gap-y-1 border-t md:flex-row md:items-center py-4 px-4 md:px-8 hover:bg-gray-100 cursor-pointer">
-								<p className="flex-[0.25] text-xs font-medium text-gray-500 uppercase">
-									Twitter
-								</p>
-								<div className="flex-[0.75] flex items-center justify-between">
-									<a
-										href="https://twitter.com/Kashish_jain04"
-										target="_blank"
-										rel="noopener noreferrer"
-										className="w-max text-highlight font-medium"
-									>
-										Kashish_jain04
-									</a>
-									<ChevronRight className="h-6 w-6 flex-[0.1]" />
-								</div>
-							</div>
 						</div>
 					</div>
 					<div className="md:w-1/2">
-						<div className="overflow-hidden max-w-2xl mx-auto my-2 md:my-4 pt-4 rounded-md border">
-						<h2 className="text-xl ml-4 md:ml-8 mb-2 underline underline-offset-4">Doubts Solved</h2>
+						<div className="overflow-hidden max-w-2xl mx-auto my-2 md:my-4 pt-4 px-2 md:px-4 rounded-md border">
+						<h2 className="text-xl ml-2 md:ml-4 mb-2 underline underline-offset-4">Doubts Solved</h2>
 							<DoubtsChart />
 						</div>
 						<div className="overflow-hidden max-w-2xl mx-auto my-2 md:my-4 pt-4 rounded-md border">

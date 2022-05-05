@@ -7,6 +7,7 @@ const labels = ["C++", "Java", "Python", "Javascript", "Nodejs", "Reactjs", "Fir
 const TopicsChart = () => {
 	return (
 		<Pie
+		className="md:scale-90"
 			data={{
 				labels,
 				datasets: [
