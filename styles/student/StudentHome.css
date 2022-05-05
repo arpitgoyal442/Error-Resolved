@@ -54,6 +54,9 @@
 	flex: 1;
 	overflow-y: scroll;
 }
+.studentRight .doubtCards{
+	padding-top: 1rem;
+}
 .studentMobile .newDoubt{
 	color: white;
 	display: flex;

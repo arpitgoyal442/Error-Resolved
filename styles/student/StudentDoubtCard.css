@@ -41,27 +41,24 @@
   right: 0.5rem;
 
 }
-
+.studentDoubtCard:hover .studentDoubtCard_dropdown{
+  display: flex;
+}
 .studentDoubtCard_dropdown {
-	display: none;
+  display: none;
 	position: absolute;
-	background-color:darkgray;
-	width: 40px;
-  height: 130px;
-	/* min-width: 150px; */
-	overflow-y: auto;
-	height: fit-content;
-
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  top: 0;
+	right: 1rem;
+  column-gap: 10px;
 	z-index: 1;
-	right: 0;
-  
+  transform: translateY(-50%);
 }
 
 .studentDoubtCard_dropdown .iconify-inline{
-  /* color: grey; */
-  display: block;
-  margin: 10px;
-  
-  
+  background-color: var(--highlight);
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
 }
