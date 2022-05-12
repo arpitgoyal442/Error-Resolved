@@ -11,6 +11,9 @@ module.exports = {
 			margin: {
 				navbar: "10vh",
 			},
+			padding: {
+				navbar: "10vh",
+			},
 			height: {
 				navbar: "10vh",
 			},

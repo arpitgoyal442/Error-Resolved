@@ -1,6 +1,7 @@
 .studentDoubtCard{
   margin: 0.5rem 1rem;
   padding: 0.5rem 1rem;
+  padding-right: 3rem;
   border-radius: 5px;
   position: relative;
   cursor: pointer;
@@ -13,8 +14,8 @@
 .studentDoubtCard_date{
   font-size: 12px;
   position: absolute;
-  bottom: 0.5rem;
-  right: 0.5rem;
+  top: 0.5rem;
+  right: 3rem;
 }
 .studentDoubtCard_topic{
   font-size: 20px;
@@ -35,23 +36,21 @@
 
 
 .studentDoubtCard_options{
-  
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
-
 }
 .studentDoubtCard:hover .studentDoubtCard_dropdown{
   display: flex;
 }
 .studentDoubtCard_dropdown {
-  display: none;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 	position: absolute;
-  top: 0;
-	right: 1rem;
-  column-gap: 10px;
-	z-index: 1;
-  transform: translateY(-50%);
+  top: 2.5%;
+	right: 0.5rem;
 }
 
 .studentDoubtCard_dropdown .iconify-inline{
