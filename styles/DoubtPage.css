@@ -1,5 +1,4 @@
-.doubtPage_body {
-	display: grid;
+.doubtPage {
 	grid-template-columns: 5fr 2fr;
 	padding: 1rem;
 	column-gap: 1rem;
