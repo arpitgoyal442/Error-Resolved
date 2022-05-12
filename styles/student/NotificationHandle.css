@@ -2,75 +2,62 @@
      
     width: 100vw;
     height: 100vh;
-    
-}
-
-
-
-.notificationHandle_header{
-    display: flex;
-    padding: 20px;
-    /* flex-wrap: wrap; */
-    width: fit-content;
-    /* background-color:lightg */
-    border-radius: 5px;
-    margin: 5px;
-    
-    
-}
-
-.notificationHandle_header h1{
-
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   color:rgb(60, 59, 59)
 
    
+
+    
 }
 
-.notificationHandle_header img{
+.notificationHandle_head{
 
-    height: 30vh;
-    min-height: 200px;
-}
+    height: 40%;
 
-.notificationHandle_header_right{
-
-    margin-left: 5px;
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    
 }
 
 .notificationHandle_body{
 
-    padding:20px
+    height: 30%;
+
+    background-color: bisque;
+
 }
 
 .notificationHandle_footer{
-
-    display: flex;
-    justify-content: space-evenly;
-
-    
+    background-color: brown;
 
 }
-.notificationHandle_footer button{
 
-    font-size:large;
-    width: 15%;
-    height: fit-content;
+.notificationHandle_head_card img{
+
+    height: 100%;
+    width: 25%;
     border-radius: 5px;
-    background-color:darkgray;
-    border: 0;
-    padding: 5px;
-    
-
 }
+.notificationHandle_head_card{
+
+    /* justify-content: center; */
+    /* align-self: center; */
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0);
 
 
-
-.notificationHandle_footer button:hover{
-
+    height: 80%;
+    width: 50%;
     background-color: lightgray;
-    cursor: pointer;
+    /* padding: 10px; */
+
+
+
+
+
 }
+
+
+
+
+
+

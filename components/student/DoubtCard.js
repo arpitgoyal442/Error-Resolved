@@ -7,20 +7,24 @@ function StudentDoubtCard() {
 			<h4 className="studentDoubtCard_topic">Java</h4>
 			<ul className="studentDoubtCard_dropdown">
 				<Link href="/student/doubt/123">
+					<div>
 					<span
 						className="iconify-inline"
 						data-icon="akar-icons:eye"
 						data-width="25"
 						data-height="25"
 					></span>
+					</div>
 				</Link>
 				<Link href="/student/edit/123">
+					<div>
 					<span
 						className="iconify-inline"
 						data-icon="ci:edit"
 						data-width="25"
 						data-height="25"
 					></span>
+					</div>
 				</Link>
 				<span
 					className="iconify-inline"

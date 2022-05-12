@@ -36,7 +36,7 @@ function Add() {
 		<div className="addDoubt">
 			<Navbar />
 			<div className="addDoubt_body">
-				<h1 className="addDoubt_mainHead">Add Doubt</h1>
+				<h1 className="addDoubt_mainHead">Edit Doubt</h1>
 
 				<div className="addDoubt_form">
 					<div className="addDoubt_language">
@@ -51,8 +51,9 @@ function Add() {
 					</div>
 					<div className="addDoubt_difficulty">
 						<label className="addDoubt_heading">
-							Difficulty*
+							Amount*
 						</label>
+						{/* <input className="list" type="text" /> */}
 						<div className="list">
 							<p className={difficulty===1?'active':undefined} onClick={() => setDifficulty(1)}>Easy</p>
 							<p className={difficulty===2?'active':undefined} onClick={() => setDifficulty(2)}>Medium</p>
@@ -82,7 +83,7 @@ function Add() {
 					</div>
 
 					<div className="addDoubt_btnParent">
-						<button className="addDoubt_btn">Add</button>
+						<button className="addDoubt_btn">Update</button>
 					</div>
 				</div>
 			</div>

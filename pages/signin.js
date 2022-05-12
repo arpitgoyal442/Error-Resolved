@@ -5,19 +5,33 @@ function signin(){
     return(
 
         <div className="signin">
+
+            {/* <img src="/sign_back.svg" alt="" /> */}
             
-            <h2> <span><del>ERROR:</del> </span>RESOLVED</h2>
+           <div className="signin_left">
 
-            <div className="signin_card">
+               <img src="/signin_img.jpeg.svg" alt="" />
 
-               <h1>Student Login</h1>
-               <button>Google Login</button>
-               <button>Facebook Login</button>
+              
 
-               <h5>Login as Debugger?</h5>
+           </div>
 
+           <div className="signin_right">
 
-            </div>
+               <div className="signin_right_card">
+
+                   <h1><del>Error</del>: Resolved</h1>
+                   <button>Continue As Student</button>
+                   <button>Continue As Debugger</button>
+                   <p>we can't help everyone , but everyone can help someone!</p>
+
+               </div>
+
+               
+
+           </div>
+           
+
 
         </div>
 

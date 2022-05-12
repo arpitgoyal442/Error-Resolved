@@ -1,49 +1,43 @@
 
 import Navbar from "../../../components/Navbar";
+import DoubtsChart from "../../../components/profile/DoubtsChart";
+import TopicsChart from "../../../components/profile/TopicsChart";
 
 
 function notificationHandle(){
 
     return(
 
-      <div className="notificationHandle">
+     <div className="notificationHandle">
+         
+         <Navbar></Navbar>
 
-          <Navbar/>
+             <div className="notificationHandle_head">
 
-          <div className="notificationHandle_header">
+                 <div className="notificationHandle_head_card">
+                      
+                      <img src="/profile_img.jpeg" alt="" />
+                     <div className="notificationHandle_head_card_right">
 
-              <img src="/userimg.jpg" alt="" />
-              <div className="notificationHandle_header_right">
-
-                  <h1>Dhruv Pasricha</h1>
-                  <p> <b>Rating : </b>(4/5) <span className="iconify-inline" data-icon="ant-design:star-filled" style={{color:'rgb(60, 59, 5'}}></span></p>
-                  <p> <b>Speciality :</b>  Java , c++ , Competitive programming</p>
-                  <p><b>Total doubts solved:</b> 56</p>
-
-              </div>
-
-             
-
-          </div>
-          <hr />
-
-          <div className="notificationHandle_body">
-              <h2>Doubt Description:</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
+                         <h2>Arpit Goyal</h2>
 
 
+                     </div>
+                     
 
-          <div className="notificationHandle_footer">
+                 </div>
 
-              <button>Accept</button>
-              <button>Decline</button>
-          </div>
+             </div>
+
+             <div className="notificationHandle_body">r</div>
+
+             <div className="notificationHandle_footer">r</div>
 
 
 
+         
 
-      </div>
+     </div>
     )
 
 }

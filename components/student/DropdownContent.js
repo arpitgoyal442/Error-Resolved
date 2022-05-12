@@ -7,7 +7,7 @@ function DropdownContent(){
 
     return (
 
-        <>
+        <div >
       
         <Link href="/student/notification/123">
         <p> <b>Dhruv Pasricha</b> Is requesting to solve Java Doubt</p>
@@ -18,7 +18,7 @@ function DropdownContent(){
         <hr />
         
           
-        </>
+        </div>
     )
 
 

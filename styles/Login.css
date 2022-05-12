@@ -1,55 +1,105 @@
 .signin{
-	height: 100vh;
-	width: 100vw;
+
+	 width: 100vw;
+	height: 100vh ;
+	padding: 4rem;
+	
+	display: flex;
+
+	border-radius: 5px;
+	/* opacity: 0.2; */
+	/* background-color: rgb(0, 133, 143,0.5);
+	 */
+
+	 /* background-color:#008891; */
+	 background-color: aliceblue;
+	
+}
+
+.signin_left{
+
+	background-color:#008891;
+	flex: 1;
+	border-top-right-radius:100% ;
+}
+
+.signin_right_card{
+
+
+
+	width: 80%;
+	height: 50%;
+	color:#008891;
 	display: flex;
 	flex-direction: column;
-	justify-content:space-around;
-	align-items: center;
+	
+	
+
+	justify-content: space-evenly;
+
+
+	
+	
 }
 
-.signin_card{
+.signin_right_card h1{
 
+	text-align: center;
+
+	margin-bottom: 50px;
+	
+
+	
+}
+
+.signin_right_card button{
+
+	text-align: center;
+
+	padding: 8px;
+	width: fit-content;
+	align-self: center;
+	/* display: block; */
+	/* margin: 1px; */
+	background-color: #008891;
+	color: white;
+	border-radius: 5px
+}
+
+.signin_right{
 	display: flex;
-	height: 50vh;
-	/* background-color: aqua; */
-	flex-direction: column;
+	justify-content: center;
 	align-items: center;
+	background-color: aliceblue;
 	
-	justify-content: flex-start;
-	
-	
-	/* background-color: antiquewhite; */
-
+  flex: 1;
 }
 
-.signin h2{
+.signin_right p{
+	text-align: center;
+}
+
+@media only screen and (max-width:720px){
+
+	.signin_left{
+		display: none;
+
+	}
+
 	
-	margin-top: 15%;
-	font-size: xx-large;
-	font-weight: 400;
-	flex: 0.9;
-}
 
-.signin_card h1{
-	font: 400;
-}
+	.signin{
+		background:linear-gradient(45deg,#96c893,#008891)
 
-.signin del{
+	}
 
-	color: red;
-}
+	.signin_right{
+		border-radius: 10px;
+		background-color: rgba(200,200,200,0.6);
+	}
 
-.signin_card button{
+	.signin_right button{
+		margin: 10px;
+	}
 
-	font-size: larger;
-	margin: 2%;
-	border: 1px solid black;
-	background-color: var(--highlight);
-
-}
-
-.signin_card h5:hover{
-
-	cursor: pointer;
-	
 }
