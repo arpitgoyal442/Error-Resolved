@@ -36,6 +36,8 @@
 	
 
 	justify-content: space-evenly;
+	/* box-shadow: 2px 4px  rgb(0, 136, 145,0.5); */
+	z-index: 1;
 
 
 	
@@ -58,9 +60,10 @@
 
 	padding: 8px;
 	width: fit-content;
+	font-size: larger;
 	align-self: center;
 	/* display: block; */
-	/* margin: 1px; */
+	margin: 10px;
 	background-color: #008891;
 	color: white;
 	border-radius: 5px
@@ -89,17 +92,51 @@
 	
 
 	.signin{
-		background:linear-gradient(45deg,#96c893,#008891)
+		/* background:linear-gradient(45deg,#96c893,#008891)
+		 */
+
+		 
+		 /* background-image: url("/doubt.svg"); */
+		 /* opacity: 0.8; */
+		 /* background-color: white; */
+		
+		
 
 	}
 
 	.signin_right{
-		border-radius: 10px;
-		background-color: rgba(200,200,200,0.6);
+		/* border-radius: 10px; */
+		/* background-color: #008891; */
+		
+		
+		/* justify-content: flex-start; */
+		/* align-items: flex-start; */
+		
+		
 	}
 
-	.signin_right button{
-		margin: 10px;
+	.signin_right_card{
+
+		background-color: rgb(173, 173, 173);
+		height: fit-content;
+		padding: 10px;
+		
+		border-top-right-radius: 50%;
+		border-bottom-left-radius: 50%;
+		/* border-top-left-radius: 30%;
+		border-bottom-right-radius: 15%; */
 	}
+
+	.signin_right_card p{
+
+		font-size: medium;
+		font-weight: 500;
+	}
+
+	
+
+	
+
+
 
 }
