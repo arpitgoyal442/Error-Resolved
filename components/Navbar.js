@@ -23,12 +23,12 @@ function Navbar() {
 			</h2>
 			<div className="navbarIcons">
 				<div
-					onClick={() => {
-						showNotification ? setNotification(false) : setNotification(true);
-					}}
+					
 					className="dropdown"
 				>
-					<div className="w-8 h-8 relative">
+					<div  onClick={() => {
+						showNotification ? setNotification(false) : setNotification(true);
+					}} className="w-8 h-8 relative">
 						<p className="grid place-items-center w-4 h-4 text-xs text-white font-semibold rounded-full bg-highlight absolute top-0 right-0 -translate-y-1/3">2</p>
 						<BellIcon />
 					</div>
@@ -37,7 +37,7 @@ function Navbar() {
 						style={{ display: showNotification ? "block" : "none" }}
 					>
 						<ul>
-							<DropdownContent />
+							<DropdownContent   />
 							<DropdownContent />
 							<DropdownContent />
 							<DropdownContent />

@@ -1,6 +1,6 @@
 
 
-function modal({offModal}){
+function modal(){
 
 
     return(
