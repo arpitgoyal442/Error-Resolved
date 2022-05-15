@@ -37,18 +37,18 @@ function Navbar() {
 						style={{ display: showNotification ? "block" : "none" }}
 					>
 						<ul>
-							<DropdownContent   />
-							<DropdownContent />
-							<DropdownContent />
-							<DropdownContent />
-							<DropdownContent />
-							<DropdownContent />
-							<DropdownContent />
-							<DropdownContent />
-							<DropdownContent />
-							<DropdownContent />
-							<DropdownContent />
-							<DropdownContent />
+							<DropdownContent closeDropdown={() => setNotification(false)} />
+							<DropdownContent closeDropdown={() => setNotification(false)} />
+							<DropdownContent closeDropdown={() => setNotification(false)} />
+							<DropdownContent closeDropdown={() => setNotification(false)} />
+							<DropdownContent closeDropdown={() => setNotification(false)} />
+							<DropdownContent closeDropdown={() => setNotification(false)} />
+							<DropdownContent closeDropdown={() => setNotification(false)} />
+							<DropdownContent closeDropdown={() => setNotification(false)} />
+							<DropdownContent closeDropdown={() => setNotification(false)} />
+							<DropdownContent closeDropdown={() => setNotification(false)} />
+							<DropdownContent closeDropdown={() => setNotification(false)} />
+							<DropdownContent closeDropdown={() => setNotification(false)} />
 						</ul>
 					</div>
 				</div>
