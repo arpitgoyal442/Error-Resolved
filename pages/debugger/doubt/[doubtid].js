@@ -1,3 +1,4 @@
+import Document from "../../../components/doubtComponents/Document.js";
 import MobileDoubtPage from "../../../components/MobileDoubtPage.js";
 import Navbar from "../../../components/Navbar.js";
 
@@ -10,7 +11,9 @@ function DoubtPage() {
 				<div className="left">
 					<div className="doubtPage_main">
 						<div className="doubtPage_mainHead">JAVA DOUBT</div>
-						<div className="doubtPage_mainBody"></div>
+						<div className="doubtPage_mainBody">
+							<Document />
+						</div>
 					</div>
 					<div className="left_footer">
 						<span

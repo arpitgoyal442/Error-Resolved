@@ -1,12 +1,14 @@
-import {useState} from "react";
+import { useState } from "react";
 import CameraIcon from "@heroicons/react/solid/VideoCameraIcon";
 import MicIcon from "@heroicons/react/solid/MicrophoneIcon";
 import ChatIcon from "@heroicons/react/solid/ChatAltIcon";
 import AttachIcon from "@heroicons/react/solid/PaperClipIcon";
 import XIcon from "@heroicons/react/solid/XIcon";
+import Document from "./doubtComponents/Document";
 
 const MobileDoubtPage = () => {
-  const [showChat, setShowChat] = useState(false);
+	const [showChat, setShowChat] = useState(false),
+		[viewType, setViewType] = useState(1); // 1 = screen, 2 = code, 3 = document
 	return (
 		<>
 			{showChat && <MobileChat closeChat={() => setShowChat(false)} />}
@@ -14,14 +16,29 @@ const MobileDoubtPage = () => {
 				{/* Topic */}
 				<div className="rounded-md bg-darkest p-2 text-center font-semibold">Java Doubt</div>
 				{/* Screen */}
-				<div className="mt-4 h-[60vh] w-full flex items-center flex-1">
-					<div className="border-2 rounded-md w-full aspect-video"></div>
+				<div className="mt-4 flex-1">
+					<div className="border-2 rounded-md w-full h-full bg-light">{viewType === 3 && <Document />}</div>
 				</div>
 				{/* View Options */}
 				<div className="flex items-center justify-evenly mt-4 bg-light p-2 rounded-md">
-					<p className="border-b-2 border-b-highlight">Screen</p>
-					<p>Code</p>
-					<p>Document</p>
+					<p
+						onClick={() => setViewType(1)}
+						className={`border-b-highlight ${viewType === 1 && "border-b-2"}`}
+					>
+						Screen
+					</p>
+					<p
+						onClick={() => setViewType(2)}
+						className={`border-b-highlight ${viewType === 2 && "border-b-2"}`}
+					>
+						Code
+					</p>
+					<p
+						onClick={() => setViewType(3)}
+						className={`border-b-highlight ${viewType === 3 && "border-b-2"}`}
+					>
+						Document
+					</p>
 				</div>
 				{/* Buttons */}
 				<div className="p-2 flex items-center justify-center space-x-6 border-t mt-4 ">
@@ -42,7 +59,7 @@ const MobileDoubtPage = () => {
 
 export default MobileDoubtPage;
 
-const MobileChat = ({closeChat}) => {
+const MobileChat = ({ closeChat }) => {
 	return (
 		<div className="bg-light absolute top-0 left-0 w-screen h-screen pt-navbar flex flex-col">
 			<div className="w-full bg-darkest py-2 px-4 flex items-center justify-between">
