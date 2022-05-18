@@ -15,7 +15,7 @@ function StudentHome() {
 			<main className="studentHome">
 				{/* mobile-view options panel */}
 				<div className="studentMobile">
-					<Link href="/student/new">
+					<Link href="/student/new-doubt">
 						<div className="newDoubt">
 							<PlusIcon height={"1.5rem"} width={"1.5rem"} />
 							<p>New Doubt</p>
